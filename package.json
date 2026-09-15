@@ -9,9 +9,9 @@
     "generate:book": "node scripts/generate-book.mjs"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "latest",
     "@supabase/supabase-js": "latest",
     "next": "latest",
+    "openai": "^7.15.0",
     "react": "latest",
     "react-dom": "latest"
   }
