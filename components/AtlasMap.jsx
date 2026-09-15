@@ -66,7 +66,7 @@ export default function AtlasMap({ def }){
         map.addLayer({ id:'place-labels', type:'symbol', source:'places', layout:{ 'text-field':['get','name'], 'text-font':FONT, 'text-size':['interpolate',['linear'],['zoom'],5,10,9,13], 'text-variable-anchor':['left','right','top','bottom'], 'text-radial-offset':0.7, 'text-justify':'auto', 'text-optional':true }, paint:{ 'text-color':'#ece7dc', 'text-halo-color':'#171510', 'text-halo-width':1.4 } });
         // Fit the view to everything drawn
         const all=[...def.places.map(p=>PLACES[p[0]].c), ...def.routes.flatMap(r=>r.legs.flatMap(l=>l.stops.map(coord))), ...def.regions.flatMap(r=>r.ring)];
-        if(all.length){ const lons=all.map(c=>c[0]), lats=all.map(c=>c[1]); map.fitBounds([[Math.min(...lons),Math.min(...lats)],[Math.max(...lons),Math.max(...lats)]],{ padding:{ top:36, bottom:36, left:36, right:36 }, duration:0, maxZoom:9 }); }
+        if(all.length){ const lons=all.map(c=>c[0]), lats=all.map(c=>c[1]); map.fitBounds([[Math.min(...lons),Math.min(...lats)],[Math.max(...lons),Math.max(...lats)]],{ padding:{ top:36, bottom:36, left:36, right:36 }, duration:0, maxZoom:def.maxZoom||9 }); }
         map.on('click','places',e=>{ const f=e.features[0]; setSel({ name:f.properties.name, refs:JSON.parse(f.properties.refs), desc:f.properties.desc, modern:PLACES[f.properties.name].modern, approx:PLACES[f.properties.name].approx }); });
         map.on('mouseenter','places',()=>map.getCanvas().style.cursor='pointer'); map.on('mouseleave','places',()=>map.getCanvas().style.cursor='');
         map.on('click',e=>{ const hits=map.queryRenderedFeatures(e.point,{ layers:['places'] }); if(!hits.length) setSel(null); });
@@ -75,7 +75,7 @@ export default function AtlasMap({ def }){
     return ()=>{ cancelled=true; if(map) map.remove(); mapRef.current=null; };
   },[def.id]);
   useEffect(()=>{ const map=mapRef.current; if(!map||!map.isStyleLoaded()) return; def.routes.forEach(r=>{ const v=visible[r.id]?'visible':'none'; ['route-'+r.id,'route-'+r.id+'-halo','route-'+r.id+'-arrows'].forEach(id=>{ if(map.getLayer(id)) map.setLayoutProperty(id,'visibility',v); }); }); },[visible]);
-  function flyTo(name){ const map=mapRef.current; if(!map) return; map.flyTo({ center:PLACES[name].c, zoom:Math.max(map.getZoom(),8), speed:0.8 }); const p=def.places.find(x=>x[0]===name); if(p) setSel({ name, refs:p[1], desc:p[2], modern:PLACES[name].modern, approx:PLACES[name].approx }); }
+  function flyTo(name){ const map=mapRef.current; if(!map) return; map.flyTo({ center:PLACES[name].c, zoom:Math.max(map.getZoom(),Math.min(def.maxZoom||9,8)), speed:0.8 }); const p=def.places.find(x=>x[0]===name); if(p) setSel({ name, refs:p[1], desc:p[2], modern:PLACES[name].modern, approx:PLACES[name].approx }); }
   return <div className="atlas">
     <div className="atlas-map" ref={el} />
     <div className="atlas-side">
