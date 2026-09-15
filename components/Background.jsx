@@ -19,15 +19,19 @@ export default function Background(){
   orbs.forEach((o,i)=>{const x=(o.x+Math.sin(t*o.sp+i)*o.ax)*W,y=(o.y+Math.cos(t*o.sp*1.3+i)*o.ay)*H,r=o.r*Math.max(W,H);const g=ctx.createRadialGradient(x,y,0,x,y,r);const col=i===1?(dark?'#4d6f95':'#b08d3f'):tint;g.addColorStop(0,rgba(col,dark?.16:.13));g.addColorStop(1,rgba(col,0));ctx.fillStyle=g;ctx.fillRect(0,0,W,H)});
   ctx.lineCap='round';ctx.lineJoin='round';
   parts.forEach(p=>{if(!reduce){p.x+=p.vx;p.y+=p.vy;p.r+=p.vr;if(p.y<-40){p.y=H+40;p.x=Math.random()*W}if(p.x<-40)p.x=W+40;if(p.x>W+40)p.x=-40}
-   const dx=p.x-mouse.x,dy=p.y-mouse.y,d=Math.hypot(dx,dy);const near=Math.max(0,1-d/220);const a=(dark?.10:.085)+near*.35+Math.sin(t*.0008+p.ph)*.015;const sc=p.s*(1+near*.35);
+   const dx=p.x-mouse.x,dy=p.y-mouse.y,d=Math.hypot(dx,dy);const near=d>0?Math.max(0,1-d/220):0;const a=(dark?.10:.085)+near*.35+Math.sin(t*.0008+p.ph)*.015;const sc=p.s*(1+near*.35);
    ctx.save();ctx.translate(p.x+(near?dx/d*near*10:0),p.y+(near?dy/d*near*10:0));ctx.rotate(p.r);ctx.scale(sc,sc);ctx.translate(-12,-12);ctx.strokeStyle=rgba(near>.05?tint:ink,a);ctx.lineWidth=1.3/sc;glyphs[p.g].forEach(g=>ctx.stroke(g));ctx.restore()});
   if(!reduce&&!document.hidden)raf=requestAnimationFrame(draw)}
  function start(){cancelAnimationFrame(raf);tint=cssVar('--accent')||'#8a3b2e';raf=requestAnimationFrame(draw)}
- addEventListener('resize',()=>{resize();if(reduce)start()});addEventListener('pointermove',e=>{mouse.x=e.clientX;mouse.y=e.clientY});addEventListener('pointerleave',()=>{mouse.x=-1e4;mouse.y=-1e4});
- document.addEventListener('visibilitychange',()=>{if(!document.hidden)start()});
+ const onResize=()=>{resize();if(reduce)start()};
+ const onMove=e=>{mouse.x=e.clientX;mouse.y=e.clientY};
+ const onLeave=()=>{mouse.x=-1e4;mouse.y=-1e4};
+ const onVisibility=()=>{if(!document.hidden)start()};
+ addEventListener('resize',onResize);addEventListener('pointermove',onMove);addEventListener('pointerleave',onLeave);
+ document.addEventListener('visibilitychange',onVisibility);
  window.__bg={setTint(col){tint=col||cssVar('--accent');if(reduce)start()},restart:start};
  resize();start();
- return ()=>{cancelAnimationFrame(raf);window.__bg=null};
+ return ()=>{cancelAnimationFrame(raf);removeEventListener('resize',onResize);removeEventListener('pointermove',onMove);removeEventListener('pointerleave',onLeave);document.removeEventListener('visibilitychange',onVisibility);window.__bg=null};
 
  },[]);
  return <canvas id="bg" ref={ref} aria-hidden="true"/>;

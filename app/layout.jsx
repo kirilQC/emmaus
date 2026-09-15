@@ -1,4 +1,5 @@
 import './globals.css';
+import './reading.css';
 import { Newsreader, Instrument_Serif, Instrument_Sans } from 'next/font/google';
 import Nav from '../components/Nav.jsx';
 import Footer from '../components/Footer.jsx';
@@ -9,6 +10,6 @@ const isans = Instrument_Sans({ subsets: ['latin'], weight: ['400', '500', '600'
 export const metadata = { title: 'Emmaus', description: 'The whole Bible, opened as one story.' };
 export default function RootLayout({ children }) {
   return <html lang="en" className={`${newsreader.variable} ${iserif.variable} ${isans.variable}`}>
-    <body><Background /><Nav /><div id="app">{children}</div><Footer /></body>
+    <body><a className="skip-link" href="#app">Skip to content</a><Background /><Nav /><main id="app" tabIndex={-1}>{children}</main><Footer /></body>
   </html>;
 }

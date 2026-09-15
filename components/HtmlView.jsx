@@ -11,7 +11,12 @@ export default function HtmlView({ render, parts = [], onRendered }) {
   const [ready, setReady] = useState(S.loaded);
   const [tick, setTick] = useState(0);
   const ref = useRef(null);
-  useEffect(() => { if (!S.loaded) S.load().then(() => setReady(true)); }, []);
+  useEffect(() => {
+    S.load().then(() => setReady(true));
+    const update = () => setTick(t => t + 1);
+    window.addEventListener('emmaus:state', update);
+    return () => window.removeEventListener('emmaus:state', update);
+  }, []);
   const html = ready ? render() : '';
   useEffect(() => {
     if (!ready) return;
@@ -23,7 +28,7 @@ export default function HtmlView({ render, parts = [], onRendered }) {
   const onClick = useCallback(e => {
     const a = e.target.closest('a[href]'); if (!a) return;
     const href = a.getAttribute('href');
-    if (!href || href.startsWith('http') || href.startsWith('#') || a.target === '_blank') return;
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || a.hasAttribute('download') || !href || !href.startsWith('/') || href.startsWith('//') || a.target === '_blank') return;
     e.preventDefault(); router.push(href);
   }, [router]);
   if (!ready) return <div className="wrap"><div className="note">Loading…</div></div>;
