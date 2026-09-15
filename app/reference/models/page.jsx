@@ -1,10 +1,11 @@
 'use client';
+import Artwork from '../../../components/Artwork.jsx';
 import { MODELS } from '../../../lib/models/index.js';
 import { diagramById } from '../../../lib/diagrams/index.js';
 import { ico } from '../../../lib/icons.js';
 const SOON=[];
 export default function Page(){
-  return <div className="wrap">
+  return <div className="wrap"><Artwork id="C3" className="art-page-heading"/>
     <div className="crumb"><a href="/reference">Reference</a><span>/</span><span style={{ color:'var(--ink)' }}>3D models</span></div>
     <h1 className="h1" style={{ marginTop:36, fontSize:'clamp(48px,7vw,96px)' }}>3D Models</h1>
     <p style={{ fontSize:22, color:'var(--dim)', margin:'14px 0 0', maxWidth:760 }}>The buildings from the blueprints, raised to full height from the same measurements. Orbit, zoom, lift the coverings, and click any part.</p>

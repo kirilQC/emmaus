@@ -1,7 +1,7 @@
-import { ico } from '../lib/icons.js';
+import Artwork from './Artwork.jsx';
 export default function Footer(){
   return <footer>
-    <div><a className="brand" href="/"><span className="mark" dangerouslySetInnerHTML={{__html:ico('emmaus',20)}}/><span className="word">Emmaus</span></a>
+    <div><a className="brand art-brand" aria-label="Emmaus" href="/"><Artwork id="logo" className="art-logo"/><Artwork id="wordmark" className="art-wordmark"/></a>
       <div style={{marginTop:10,maxWidth:340,fontStyle:'italic',fontFamily:"'Newsreader',Georgia,serif",fontSize:16}}>“He opened to us the Scriptures.” A personal study of the whole Bible.</div></div>
     <div style={{maxWidth:520,fontSize:12,lineHeight:1.5}}>Scripture quotations are taken from the Holy Bible, New Living Translation, copyright ©1996, 2004, 2015 by Tyndale House Foundation. Used by permission of Tyndale House Publishers, Carol Stream, Illinois 60188. All rights reserved.</div>
     <div className="cols">
