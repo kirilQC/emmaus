@@ -3,11 +3,13 @@ import { MAPS } from '../../lib/atlas/maps.js';
 import { DIAGRAMS } from '../../lib/diagrams/index.js';
 import { CHARTS } from '../../lib/charts/tables.js';
 import { ESSAYS } from '../../lib/background.js';
+import { MODELS } from '../../lib/models/index.js';
 import { ico } from '../../lib/icons.js';
 const SHELVES=[
   ['Atlas','/reference/atlas','map',`${MAPS.length} maps`,'Interactive maps on real terrain. Places open their chapters; routes are broken into legs with references.'],
   ['Diagrams','/reference/diagrams','tablets',`${DIAGRAMS.length} drawings`,'Original drawings to the cubit, every element linked to its verse.'],
-  ['Charts','/reference/charts','layers',`${CHARTS.length+1} charts`,'Timelines and tables: reigns, prophets, feasts, offerings, covenants, genealogies.'],
+  ['3D models','/reference/models','layers',`${MODELS.length} models`,'The blueprints raised to full height. Orbit, zoom, lift the coverings, click any part.'],
+  ['Charts','/reference/charts','scales',`${CHARTS.length+1} charts`,'Timelines and tables: reigns, prophets, feasts, offerings, covenants, genealogies.'],
   ['Background','/reference/background','scroll',`${ESSAYS.length} essays`,'What the Bible assumes you know: the silent centuries, the parties, daily life, how we got the text.'],
 ];
 export default function Page(){
