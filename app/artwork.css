@@ -1,0 +1,50 @@
+/* Approved illustration layer over the original 3c6c972 layout. */
+.emmaus-art { display:block; width:150px; max-width:100%; pointer-events:none; user-select:none; }
+.emmaus-art svg { display:block; width:100%; height:auto; overflow:hidden; }
+
+
+.art-page-heading { float:right; width:180px; height:155px; margin:5px 12px 15px 35px; display:flex; align-items:center; justify-content:center; opacity:.65; }
+.art-page-heading svg { max-height:155px; }
+.art-card-heading { width:110px; height:76px; float:right; margin:0 0 10px 20px; opacity:.55; }
+.art-card-heading svg { width:100%; height:100%; }
+.art-margin { width:115px; margin-top:24px; opacity:.48; }
+.art-chapter { width:160px; float:right; margin:30px 0 16px 28px; opacity:.58; }
+.art-divider { clear:both; width:210px; margin:36px auto 0; opacity:.4; }
+.art-corner { position:absolute; top:14px; right:14px; width:44px; opacity:.19; }
+.art-rest { width:250px; margin:32px auto 10px; opacity:.58; }
+.art-parable { width:72px; margin-top:14px; opacity:.6; }
+.art-book { width:95px; margin:12px 0 0; opacity:.4; }
+.art-logo { width:42px; flex-shrink:0; }
+.art-wordmark { width:105px; flex-shrink:0; }
+.brand.art-brand { gap:9px; }
+footer .brand.art-brand .art-logo { width:50px; }
+footer .brand.art-brand .art-wordmark { width:126px; }
+.art-card { position:relative; }
+.art-card>.emmaus-art { position:absolute; right:20px; top:18px; width:80px; height:60px; opacity:.48; }
+.art-card>.emmaus-art svg { width:100%; height:100%; }
+
+.art-page-heading ~ .grid2, .art-page-heading ~ .grid3, .art-page-heading ~ .sect, .art-clear { clear:both; }
+@media(max-width:1000px) {
+  .art-page-heading { width:145px; height:130px; margin-left:24px; }
+  .art-page-heading svg { max-height:130px; }
+}
+@media(max-width:640px) {
+  .art-page-heading { width:90px; height:85px; margin:12px 0 8px 14px; opacity:.5; }
+  .art-page-heading svg { max-height:85px; }
+  .art-page-heading ~ .h1 { font-size:clamp(44px,10vw,64px)!important; }
+  .art-page-heading ~ p { clear:both; }
+  .art-margin { width:70px; margin-top:12px; display:none; }
+  .art-chapter { width:60px; margin:0 0 10px 12px; }
+  .art-chapter ~ .crumb + div { clear:both; }
+  .art-divider { width:150px; margin-top:28px; }
+  .art-card>.emmaus-art { width:64px; height:50px; }
+  .art-rest { width:205px; }
+}
+.art-home-wordmark { width:440px; max-width:100%; }
+.art-home-mark { width:30px; flex:none; }
+@media(max-width:640px) { .art-home-wordmark { width:330px; } }
+
+.wrap>.emmaus-art { animation:none; }
+
+.art-card-copy { min-width:0; }
+.art-card-copy>.lab, .art-card-title { padding-right:80px; }

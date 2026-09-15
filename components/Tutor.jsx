@@ -1,4 +1,5 @@
 'use client';
+import Artwork from './Artwork.jsx';
 import { useEffect, useRef, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { S } from '../lib/state.js';
@@ -29,7 +30,7 @@ export default function Tutor() {
     setBusy(false);
   }
   const chapterTitle = ctx && ctx.slug === 'matthew' ? ' · ' + MT.ch[ctx.ch - 1][1] : '';
-  return <div className="wrap">
+  return <div className="wrap"><Artwork id="A5" className="art-page-heading"/>
     <div className="lab">Grounded in the text</div>
     <h1 className="h1" style={{ marginTop: 8, fontSize: 'clamp(48px,7vw,96px)' }}>Tutor</h1>
     <p style={{ fontSize: 20, color: 'var(--dim)', margin: '14px 0 0', maxWidth: 760 }}>Answers from Scripture with verse citations. The tutor reads the NLT text of the chapter you have open before it answers.</p>

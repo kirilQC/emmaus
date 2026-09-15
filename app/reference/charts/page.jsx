@@ -1,11 +1,12 @@
 'use client';
+import Artwork from '../../../components/Artwork.jsx';
 import { ico } from '../../../lib/icons.js';
 import { CHARTS as TABLES } from '../../../lib/charts/tables.js';
 const ICONS={ feasts:'star', offerings:'flame', covenants:'scroll', twelve:'fish', measures:'scales', 'paul-life':'road', herods:'crown' };
 const CHARTS=[['kings','Kings and prophets','Every king of Israel and Judah on one timeline, judged as Kings judges them, with the prophets over the reigns they spoke into.','1 Kings · 2 Kings · the Prophets','crown'],...TABLES.map(t=>[t.id,t.title,t.subtitle,t.books.slice(0,3).join(' · '),ICONS[t.id]||'layers'])];
 const SOON=['Genealogies from Adam to Jesus','A harmony of the Gospels','Miracles and parables by Gospel','Messianic prophecies and where they land'];
 export default function Page(){
-  return <div className="wrap">
+  return <div className="wrap"><Artwork id="C4" className="art-page-heading"/>
     <div className="crumb"><a href="/reference">Reference</a><span>/</span><span style={{ color:'var(--ink)' }}>Charts</span></div>
     <h1 className="h1" style={{ marginTop:36, fontSize:'clamp(48px,7vw,96px)' }}>Charts</h1>
     <p style={{ fontSize:22, color:'var(--dim)', margin:'14px 0 0', maxWidth:760 }}>Timelines and tables that put things side by side which the text keeps chapters apart.</p>
