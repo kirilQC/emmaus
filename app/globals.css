@@ -164,3 +164,20 @@ table{border-collapse:collapse;width:100%;font-size:15px}td,th{text-align:left;p
 .nlt .bk_ch_vs_header,.nlt .chapter-number{display:none}
 .nlt verse_export{display:inline}
 .nlt .subhead{margin-top:28px}
+/* Atlas */
+.atlas{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:16px;align-items:start}
+@media (max-width:900px){.atlas{grid-template-columns:1fr}}
+.atlas-map{height:640px;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:#221d16}
+@media (max-width:640px){.atlas-map{height:460px}}
+.atlas-side{display:flex;flex-direction:column;gap:12px;max-height:640px;overflow:auto}
+.atlas-route{display:flex;gap:10px;align-items:center;font-size:14px;font-family:var(--f-ui,'Instrument Sans'),sans-serif;padding:6px 0;cursor:pointer}
+.atlas-route .swatch{width:22px;height:0;border-top:3px solid;display:inline-block;flex:none}
+.atlas-route input{accent-color:var(--accent)}
+.atlas-regions,.atlas-places{display:flex;gap:6px;flex-wrap:wrap}
+.atlas-places .opt{padding:4px 10px;font-size:13px;border-radius:999px}
+.maplibregl-ctrl-group{background:var(--card)!important;border:1px solid var(--line)!important;box-shadow:none!important}
+.maplibregl-ctrl-group button{filter:invert(.85)}
+.maplibregl-ctrl-attrib{background:rgba(23,21,16,.75)!important;color:var(--dim)!important;font-family:var(--f-ui,'Instrument Sans'),sans-serif;font-size:10px!important}
+.maplibregl-ctrl-attrib a{color:var(--dim)!important}
+.maplibregl-ctrl-scale{background:rgba(23,21,16,.6)!important;color:var(--dim)!important;border-color:var(--dim)!important;font-family:var(--f-ui,'Instrument Sans'),sans-serif}
+.maplibregl-canvas:focus{outline:none}

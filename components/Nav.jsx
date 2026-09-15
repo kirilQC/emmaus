@@ -3,7 +3,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { useEffect, useRef } from 'react';
 import { ico } from '../lib/icons.js';
 import { TOTAL } from '../lib/data.js';
-const L=[['/','Canon','book'],['/explore','Explore','compass'],['/memorize','Memorise','cards'],['/notes','Notes','pen'],['/library','Library','shelf'],['/tutor','Tutor','heart']];
+const L=[['/','Canon','book'],['/explore','Explore','compass'],['/memorize','Memorise','cards'],['/reference','Reference','map'],['/notes','Notes','pen'],['/library','Library','shelf'],['/tutor','Tutor','heart']];
 export default function Nav(){
   const path=usePathname();const router=useRouter();const inp=useRef(null);
   useEffect(()=>{const h=e=>{if(window.__memkeys)window.__memkeys(e);if(e.key==='/'&&!/INPUT|TEXTAREA/.test(document.activeElement.tagName)){e.preventDefault();inp.current&&inp.current.focus()}};window.addEventListener('keydown',h);return()=>window.removeEventListener('keydown',h)},[]);
