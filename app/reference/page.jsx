@@ -1,11 +1,14 @@
 'use client';
 import { MAPS } from '../../lib/atlas/maps.js';
+import { DIAGRAMS } from '../../lib/diagrams/index.js';
+import { CHARTS } from '../../lib/charts/tables.js';
+import { ESSAYS } from '../../lib/background.js';
 import { ico } from '../../lib/icons.js';
 const SHELVES=[
   ['Atlas','/reference/atlas','map',`${MAPS.length} maps`,'Interactive maps on real terrain. Places open their chapters; routes are broken into legs with references.'],
-  ['Diagrams','/reference/diagrams','tablets','Tabernacle, temples, the camp','Original drawings to the cubit, every element linked to its verse.'],
-  ['Charts','/reference/charts','layers','Kings and prophets first','Timelines and tables: reigns, prophets, feasts, offerings, covenants, genealogies.'],
-  ['Background','/reference/background','scroll','Coming next','What the Bible assumes you know: the silent centuries, the parties, daily life, how we got the text.'],
+  ['Diagrams','/reference/diagrams','tablets',`${DIAGRAMS.length} drawings`,'Original drawings to the cubit, every element linked to its verse.'],
+  ['Charts','/reference/charts','layers',`${CHARTS.length+1} charts`,'Timelines and tables: reigns, prophets, feasts, offerings, covenants, genealogies.'],
+  ['Background','/reference/background','scroll',`${ESSAYS.length} essays`,'What the Bible assumes you know: the silent centuries, the parties, daily life, how we got the text.'],
 ];
 export default function Page(){
   return <div className="wrap">

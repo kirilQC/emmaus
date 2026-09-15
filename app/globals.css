@@ -181,3 +181,16 @@ table{border-collapse:collapse;width:100%;font-size:15px}td,th{text-align:left;p
 .maplibregl-ctrl-attrib a{color:var(--dim)!important}
 .maplibregl-ctrl-scale{background:rgba(23,21,16,.6)!important;color:var(--dim)!important;border-color:var(--dim)!important;font-family:var(--f-ui,'Instrument Sans'),sans-serif}
 .maplibregl-canvas:focus{outline:none}
+/* Diagrams */
+.dg{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:16px;align-items:start}
+@media (max-width:900px){.dg{grid-template-columns:1fr}}
+.dg-svg{padding:18px;background:linear-gradient(180deg,#221d16,#1b1712)}
+.dg-el{cursor:pointer;transition:filter .2s,opacity .2s}
+.dg-el:hover{filter:brightness(1.35)}
+.dg-el.on{filter:brightness(1.5) drop-shadow(0 0 6px rgba(214,146,130,.7))}
+.dg-el:focus-visible{outline:none;filter:brightness(1.5) drop-shadow(0 0 6px rgba(214,146,130,.9))}
+.dg-side{display:flex;flex-direction:column;gap:12px}
+.dg-part{display:flex;gap:10px;align-items:center;background:none;border:none;color:var(--ink);text-align:left;padding:7px 8px;border-radius:4px;cursor:pointer;font-size:14px;font-family:var(--f-ui,'Instrument Sans'),sans-serif}
+.dg-part:hover,.dg-part.on{background:color-mix(in srgb,var(--accent) 14%,transparent)}
+.dg-part .dot{flex:none}
+table.tc td{font-size:15px;line-height:1.5;color:var(--ink)}table.tc td a{color:var(--accent)}table.tc th{position:sticky;top:0;background:var(--card)}
