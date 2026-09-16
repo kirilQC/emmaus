@@ -4,7 +4,7 @@ import { ESSAYS } from '../../../lib/background.js';
 import { ico } from '../../../lib/icons.js';
 export default function Page(){
   return <div className="wrap"><Artwork id="C6" className="art-page-heading"/>
-    <div className="crumb"><a href="/reference">Reference</a><span>/</span><span style={{ color:'var(--ink)' }}>Background</span></div>
+    <div className="crumb"><a href="/explore#reference">Explore</a><span>/</span><span style={{ color:'var(--ink)' }}>Background</span></div>
     <h1 className="h1" style={{ marginTop:36, fontSize:'clamp(48px,7vw,96px)' }}>Background</h1>
     <p style={{ fontSize:22, color:'var(--dim)', margin:'14px 0 0', maxWidth:760 }}>What the writers assumed you already knew. Each essay is ten minutes and every reference in it opens the chapter.</p>
     <div className="grid2" style={{ marginTop:40 }}>

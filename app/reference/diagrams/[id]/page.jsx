@@ -9,7 +9,7 @@ export default function Page({ params }){
   if(!def) return <div className="wrap"><h1 className="h1">Not found</h1><p><a href="/reference/diagrams">Back to the diagrams</a></p></div>;
   const idx=DIAGRAMS.indexOf(def); const prev=DIAGRAMS[idx-1], next=DIAGRAMS[idx+1];
   return <div className="wrap" style={{ maxWidth:1600 }}>
-    <div className="crumb"><a href="/reference">Reference</a><span>/</span><a href="/reference/diagrams">Diagrams</a><span>/</span><span style={{ color:'var(--ink)' }}>{def.title}</span></div>
+    <div className="crumb"><a href="/explore#reference">Explore</a><span>/</span><a href="/reference/diagrams">Diagrams</a><span>/</span><span style={{ color:'var(--ink)' }}>{def.title}</span></div>
     <div className="lab" style={{ marginTop:36 }}>{def.subtitle}</div>
     <h1 className="h1" style={{ marginTop:8, fontSize:'clamp(44px,6vw,88px)' }}>{def.title}</h1>
     <p style={{ fontSize:20, margin:'18px 0 0', maxWidth:820, color:'var(--dim)' }}>{def.intro}</p>

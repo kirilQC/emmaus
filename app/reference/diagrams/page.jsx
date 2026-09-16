@@ -4,7 +4,7 @@ import { DIAGRAMS } from '../../../lib/diagrams/index.js';
 import { ico } from '../../../lib/icons.js';
 export default function Page(){
   return <div className="wrap"><Artwork id="C2" className="art-page-heading"/>
-    <div className="crumb"><a href="/reference">Reference</a><span>/</span><span style={{ color:'var(--ink)' }}>Diagrams</span></div>
+    <div className="crumb"><a href="/explore#reference">Explore</a><span>/</span><span style={{ color:'var(--ink)' }}>Diagrams</span></div>
     <h1 className="h1" style={{ marginTop:36, fontSize:'clamp(48px,7vw,96px)' }}>Diagrams</h1>
     <p style={{ fontSize:22, color:'var(--dim)', margin:'14px 0 0', maxWidth:760 }}>Layouts drawn from the measurements in the text. Click any part for its dimensions, its use, the verses that describe it, and how the New Testament reads it.</p>
     <div className="grid2" style={{ marginTop:40 }}>

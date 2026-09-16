@@ -2,7 +2,7 @@
 import KingsChart from '../../../../components/charts/KingsChart.jsx';
 export default function Page(){
   return <div className="wrap" style={{ maxWidth:1600 }}>
-    <div className="crumb"><a href="/reference">Reference</a><span>/</span><a href="/reference/charts">Charts</a><span>/</span><span style={{ color:'var(--ink)' }}>Kings and prophets</span></div>
+    <div className="crumb"><a href="/explore#reference">Explore</a><span>/</span><a href="/reference/charts">Charts</a><span>/</span><span style={{ color:'var(--ink)' }}>Kings and prophets</span></div>
     <div className="lab" style={{ marginTop:36 }}>931 to 586 BC, both kingdoms and every prophet</div>
     <h1 className="h1" style={{ marginTop:8, fontSize:'clamp(44px,6vw,88px)' }}>Kings and Prophets</h1>
     <p style={{ fontSize:20, margin:'18px 0 0', maxWidth:820, color:'var(--dim)' }}>Nineteen kings in the north, none of them judged good. Twenty rulers in the south, eight of them good, all of David’s line. The prophets are drawn over the reigns they addressed, so you can see that Amos preached into Jeroboam II’s prosperity, that Isaiah outlived four kings, and that Jeremiah watched the end.</p>

@@ -5,7 +5,7 @@ import { SOURCE_POLICY, EDITORIAL_RULE } from '../../../lib/learn/method.js';
 export const metadata={ title:'Sources · Emmaus' };
 export default function Page(){
   return <div className="wrap">
-    <div className="crumb"><a href="/learn">Learn</a><span>/</span><span style={{ color:'var(--ink)' }}>Sources</span></div>
+    <div className="crumb"><a href="/explore#learn">Explore</a><span>/</span><span style={{ color:'var(--ink)' }}>Sources</span></div>
     <h1 className="h1" style={{ marginTop:36, fontSize:'clamp(48px,7vw,96px)' }}>Sources</h1>
     <p style={{ fontSize:22, color:'var(--dim)', margin:'14px 0 0', maxWidth:760 }}>{SOURCES.length} sources behind the studies. {SOURCE_POLICY}</p>
     <div className="strip" style={{ marginTop:24 }}>{SOURCE_CATEGORIES.map(c=><a key={c.slug} className="gl" href={`#${c.slug}`}><span>{c.name}</span><span className="note" style={{ fontSize:12 }}>{c.sources.length}</span></a>)}</div>

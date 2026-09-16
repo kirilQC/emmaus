@@ -4,7 +4,7 @@ import { MAPS } from '../../../lib/atlas/maps.js';
 import { ico } from '../../../lib/icons.js';
 export default function Page(){
   return <div className="wrap"><Artwork id="C1" className="art-page-heading"/>
-    <div className="crumb"><a href="/reference">Reference</a><span>/</span><span style={{ color:'var(--ink)' }}>Atlas</span></div>
+    <div className="crumb"><a href="/explore#reference">Explore</a><span>/</span><span style={{ color:'var(--ink)' }}>Atlas</span></div>
     <h1 className="h1" style={{ marginTop:36, fontSize:'clamp(48px,7vw,96px)' }}>Atlas</h1>
     <p style={{ fontSize:22, color:'var(--dim)', margin:'14px 0 0', maxWidth:760 }}>Every map is drawn on real terrain from open data. Boundaries are the text’s own descriptions, approximate where the text is. Click any place to read the chapters that mention it.</p>
     <div className="grid2" style={{ marginTop:40 }}>

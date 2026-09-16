@@ -8,7 +8,7 @@ export default function Page({ params }){
   if(!e) return <div className="wrap"><h1 className="h1">Not found</h1><p><a href="/reference/background">Back</a></p></div>;
   const idx=ESSAYS.indexOf(e); const prev=ESSAYS[idx-1], next=ESSAYS[idx+1];
   return <div className="wrap">
-    <div className="crumb"><a href="/reference">Reference</a><span>/</span><a href="/reference/background">Background</a><span>/</span><span style={{ color:'var(--ink)' }}>{e.title}</span></div>
+    <div className="crumb"><a href="/explore#reference">Explore</a><span>/</span><a href="/reference/background">Background</a><span>/</span><span style={{ color:'var(--ink)' }}>{e.title}</span></div>
     <div className="lab" style={{ marginTop:36 }}>{e.subtitle}</div>
     <h1 className="h1" style={{ marginTop:8, fontSize:'clamp(40px,5.5vw,80px)' }}>{e.title}</h1>
     <p style={{ fontSize:22, margin:'22px 0 0', maxWidth:760, fontStyle:'italic' }}>{e.intro}</p>

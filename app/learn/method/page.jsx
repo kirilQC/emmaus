@@ -6,7 +6,7 @@ export const metadata={ title:'How to read these studies · Emmaus' };
 const LEVELS={ Foundational:'Start here if the subject is new to you.', Intermediate:'Assumes the passages are familiar.', Advanced:'Weighs competing readings.', 'Deep Dive':'Follows one thread through many books.', Specialist:'Engages the scholarly argument directly.' };
 export default function Page(){
   return <div className="wrap">
-    <div className="crumb"><a href="/learn">Learn</a><span>/</span><span style={{ color:'var(--ink)' }}>Method</span></div>
+    <div className="crumb"><a href="/explore#learn">Explore</a><span>/</span><span style={{ color:'var(--ink)' }}>Method</span></div>
     <div className="lab" style={{ marginTop:36 }}>{MOTTO}</div>
     <h1 className="h1" style={{ marginTop:8, fontSize:'clamp(40px,6vw,80px)' }}>How to read these studies</h1>
     <div style={{ marginTop:22, maxWidth:780 }}>{POSTURE.map(p=><p key={p} style={{ fontSize:22, lineHeight:1.45, margin:'0 0 14px', fontStyle:'italic' }}>{p}</p>)}</div>

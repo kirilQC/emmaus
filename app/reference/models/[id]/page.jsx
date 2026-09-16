@@ -10,7 +10,7 @@ export default function Page({ params }){
   if(!m) return <div className="wrap"><h1 className="h1">Not found</h1><p><a href="/reference/models">Back to the models</a></p></div>;
   const idx=MODELS.indexOf(m); const prev=MODELS[idx-1], next=MODELS[idx+1];
   return <div className="wrap" style={{ maxWidth:1600 }}>
-    <div className="crumb"><a href="/reference">Reference</a><span>/</span><a href="/reference/models">3D models</a><span>/</span><span style={{ color:'var(--ink)' }}>{m.title}</span></div>
+    <div className="crumb"><a href="/explore#reference">Explore</a><span>/</span><a href="/reference/models">3D models</a><span>/</span><span style={{ color:'var(--ink)' }}>{m.title}</span></div>
     <div className="lab" style={{ marginTop:36 }}>{d?d.subtitle.replace(/, east at the right|, north at the top|plan view, /g,''):''}</div>
     <h1 className="h1" style={{ marginTop:8, fontSize:'clamp(44px,6vw,88px)' }}>{m.title}</h1>
     {d && <p style={{ fontSize:20, margin:'18px 0 0', maxWidth:820, color:'var(--dim)' }}>{d.intro}</p>}

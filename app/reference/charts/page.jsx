@@ -7,7 +7,7 @@ const CHARTS=[['kings','Kings and prophets','Every king of Israel and Judah on o
 const SOON=['Genealogies from Adam to Jesus','A harmony of the Gospels','Miracles and parables by Gospel','Messianic prophecies and where they land'];
 export default function Page(){
   return <div className="wrap"><Artwork id="C4" className="art-page-heading"/>
-    <div className="crumb"><a href="/reference">Reference</a><span>/</span><span style={{ color:'var(--ink)' }}>Charts</span></div>
+    <div className="crumb"><a href="/explore#reference">Explore</a><span>/</span><span style={{ color:'var(--ink)' }}>Charts</span></div>
     <h1 className="h1" style={{ marginTop:36, fontSize:'clamp(48px,7vw,96px)' }}>Charts</h1>
     <p style={{ fontSize:22, color:'var(--dim)', margin:'14px 0 0', maxWidth:760 }}>Timelines and tables that put things side by side which the text keeps chapters apart.</p>
     <div className="grid2" style={{ marginTop:40 }}>

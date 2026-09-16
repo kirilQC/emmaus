@@ -18,7 +18,7 @@ export default async function Page({ params }){
   const step=pathStep(s.id); const { prev, next }=neighbours(s); const rel=related(s); const first=s.chapters[0];
   const P=({ text })=><p className="lrn-prose"><Refs text={text}/></p>;
   return <div className="wrap">
-    <div className="crumb"><a href="/learn">Learn</a><span>/</span><a href={lanePath(s.lane)}>{s.lane}</a><span>/</span><span style={{ color:'var(--ink)' }}>{s.id}</span></div>
+    <div className="crumb"><a href="/explore#learn">Explore</a><span>/</span><a href={lanePath(s.lane)}>{s.lane}</a><span>/</span><span style={{ color:'var(--ink)' }}>{s.id}</span></div>
     <div className="lab" style={{ marginTop:36 }}>{s.lane} · {s.id}{step?` · Start here, step ${step.n}`:''}</div>
     <h1 className="h1" style={{ marginTop:8, fontSize:'clamp(40px,5.5vw,80px)' }}>{s.title}</h1>
     <div style={{ display:'flex', gap:14, alignItems:'center', flexWrap:'wrap', marginTop:18 }}><span className="lrn-badges"><Grade evidence={s.evidence}/><Diff level={s.difficulty}/><Conf level={s.confidence}/></span><DoneButton id={s.id}/></div>

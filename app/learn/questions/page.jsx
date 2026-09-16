@@ -10,7 +10,7 @@ export default function Page(){
     <div style={{ display:'flex', flexDirection:'column', gap:8, alignItems:'flex-end' }}>{POSTURE[q.posture]?<Grade evidence={POSTURE[q.posture]}/>:<span className="badge">{q.posture}</span>}<AskChip q={q.q} label="Take it to the tutor"/></div>
   </div>;
   return <div className="wrap">
-    <div className="crumb"><a href="/learn">Learn</a><span>/</span><span style={{ color:'var(--ink)' }}>Harder questions</span></div>
+    <div className="crumb"><a href="/explore#learn">Explore</a><span>/</span><span style={{ color:'var(--ink)' }}>Harder questions</span></div>
     <h1 className="h1" style={{ marginTop:36, fontSize:'clamp(48px,7vw,96px)' }}>Harder questions</h1>
     <p style={{ fontSize:22, color:'var(--dim)', margin:'14px 0 0', maxWidth:760 }}>{QUESTIONS.length} intentionally open questions for deep study. None of them is settled here; each names the passages to read together and the kind of evidence in play.</p>
     <div style={{ marginTop:32 }}>{first.map(q=><Row key={q.id} q={q}/>)}</div>
