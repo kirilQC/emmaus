@@ -51,14 +51,44 @@
 @media(max-width:900px){.lrn-quick{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .lrn-quick a{padding:16px 18px;color:var(--ink);display:flex;gap:12px;align-items:center}
 .lrn-quick a:hover{text-decoration:none}
-/* Tutor grounding panel */
-.tut-ground{margin-top:12px;border-top:1px solid var(--line);padding-top:8px;white-space:normal}
-.tut-toggle{background:none;border:none;color:var(--dim);font-family:var(--f-ui,'Instrument Sans'),sans-serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;cursor:pointer;padding:0;display:inline-flex;gap:6px;align-items:center}
-.tut-toggle:hover{color:var(--accent)}
-.tut-rows{display:flex;flex-direction:column;gap:8px;margin-top:10px}
-.tut-row{display:grid;grid-template-columns:110px minmax(0,1fr);gap:10px;align-items:start}
-.tut-row .lab{padding-top:5px;font-size:11px}
-.tut-chips{display:flex;gap:6px;flex-wrap:wrap}
-.tut-chips .chip{font-size:12px;padding:3px 9px}
-.tut-chips .chip .badge{margin-left:4px;padding:1px 6px;font-size:9px}
-@media(max-width:640px){.tut-row{grid-template-columns:1fr;gap:4px}}
+/* Tutor: poster page */
+.tut-wrap{padding-top:0}
+.tut-poster{position:relative;overflow:hidden;display:flex;justify-content:space-between;align-items:flex-end;gap:40px;padding:64px clamp(16px,4vw,56px) 44px;margin-inline:calc(-1 * clamp(16px,4vw,56px));border-bottom:1px solid var(--line);background-size:72px 72px,auto}
+.tut-poster>*{position:relative;z-index:1}
+.tut-wmk{position:absolute;right:-30px;bottom:-70px;opacity:.09;z-index:0;pointer-events:none}
+.tut-poster-copy{max-width:860px;min-width:0}
+.tut-h1{font-size:clamp(40px,5.6vw,84px);line-height:.94;margin-top:10px;overflow-wrap:anywhere}
+.tut-tag{font-size:20px;color:var(--dim);margin:18px 0 0;max-width:620px}
+.tut-verified{margin-top:18px;min-height:20px}
+.art-tut-poster{width:300px;flex:none;opacity:.72}
+.tut-ribbon{display:block;width:100%;height:56px;margin-top:14px}
+.tut-ribbon-cap{display:flex;justify-content:space-between;gap:12px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin-top:2px}
+.tut-grid{display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:56px;margin-top:44px;align-items:start}
+.tut-main{display:flex;flex-direction:column;gap:22px;min-width:0}
+.tut-earlier{color:var(--dim);padding-top:8px;border-top:1px solid var(--line)}
+.tut-turn{display:flex;flex-direction:column;gap:18px}
+.tut-lead{font-family:var(--f-disp,'Instrument Serif'),Georgia,serif;font-size:clamp(24px,2.2vw,31px);line-height:1.28;margin:0;font-style:italic}
+.tut-answer p{font-size:19px;line-height:1.65;margin:0 0 14px;max-width:76ch}
+.tut-answer p.tut-lead{margin-bottom:8px}
+.tut-verse{max-width:76ch}
+.tut-verse>span:nth-child(2){font-size:21px}
+.tut-ask{display:flex;gap:14px;align-items:center;padding:8px 8px 8px 22px;border-radius:999px;position:relative;overflow:hidden;margin-top:6px}
+.tut-ask input{flex:1;background:none;border:none;color:var(--ink);font-size:19px;font-family:var(--f-body,'Newsreader'),Georgia,serif;padding:10px 0;min-width:0;outline:none}
+.tut-ask .btn{padding:13px 22px}
+.art-ask{position:absolute;right:130px;top:-10px;width:64px;opacity:.16;pointer-events:none}
+.tut-main .gl{cursor:pointer;font-family:var(--f-ui,'Instrument Sans'),sans-serif}
+.tut-main .gl .gi{color:var(--accent)}
+.tut-rail{display:flex;flex-direction:column;gap:14px;min-width:0}
+.tut-ent{padding:20px 22px;display:flex;flex-direction:column;gap:8px;background-size:72px 72px,auto;position:relative;overflow:hidden}
+.tut-ent-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.tut-ent-name{font-family:var(--f-disp,'Instrument Serif'),Georgia,serif;font-size:32px;line-height:1;margin-top:4px}
+.art-ent{width:104px;flex:none;opacity:.6}
+.art-ent-sm{width:56px;flex:none;opacity:.55}
+.tut-map{display:block;width:100%;height:150px;margin-top:8px}
+.tut-study{padding:18px 20px;display:flex;flex-direction:column;gap:8px;color:var(--ink)}
+.tut-study:hover{text-decoration:none}
+.tut-study-t{font-family:var(--f-disp,'Instrument Serif'),Georgia,serif;font-size:22px;line-height:1.1}
+.tut-srcs .tut-chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px}
+.tut-srcs .chip{font-size:12px;padding:3px 9px}
+@media(max-width:1000px){.tut-grid{grid-template-columns:1fr;gap:32px}.art-tut-poster{width:180px}}
+@media(max-width:640px){.tut-poster{padding-top:40px;padding-bottom:32px}.art-tut-poster{display:none}.tut-ask{border-radius:12px;flex-wrap:wrap;padding:12px}.tut-ask .btn{width:100%;justify-content:center}.art-ask{display:none}}
