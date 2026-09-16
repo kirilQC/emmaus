@@ -1,0 +1,2525 @@
+{
+"path": [
+{
+"n": 1,
+"title": "What Is the Gospel",
+"why": "A newcomer needs the central announcement before a catalogue of controversies. This study also helps experienced readers distinguish the saving message from a promise of prosperity, a political program, or a technique for becoming a better person.",
+"build": "Create an opening path with four linked scenes: promise, cross, resurrection, and response. Each scene displays its passage in context; a final panel connects grace to discipleship without suggesting that deeds purchase salvation.",
+"deps": "local Scripture and the site reading view",
+"guardrail": "Christian traditions differ about how baptism, justification, and perseverance fit into receiving salvation. Do not hide those differences, but do not make a complete theory of salvation a prerequisite for understanding this announcement. Scripture does not prescribe one mandatory wording of a conversion prayer.",
+"id": "F001"
+},
+{
+"n": 2,
+"title": "One God Father Son and Holy Spirit",
+"why": "It explains why Christians worship Jesus, pray to the Father through the Son, and speak of the Spirit as divine without confessing three gods. It also teaches readers how a responsible doctrine can arise through synthesis.",
+"build": "Use a passage-first matrix: unity, personal distinction, and divine identity. Open each cell to its full passage. Avoid water, egg, or three-person analogies as explanatory proofs because they readily imply changing modes or three separate gods.",
+"deps": "F-S01",
+"guardrail": "The synthesis has very strong canonical support, but classify the synthesis as inference. Do not rely on the disputed expanded wording of 1 John 5:7. Eastern and Western churches differ on the Spirit’s procession; that later disagreement requires separate historical treatment.",
+"id": "F007"
+},
+{
+"n": 3,
+"title": "The Word Became Flesh",
+"why": "If Jesus only appeared human, his solidarity with people and his death would be emptied of meaning. This page helps readers hold together the Gospel narratives and the doctrinal claims about his identity.",
+"build": "Use two columns of textual evidence, divine identity and genuine humanity, joined to one central identity. A short historical layer can reveal later doctrinal vocabulary and the errors it was intended to exclude.",
+"deps": "F-S13",
+"guardrail": "Christians debate how divine knowledge relates to human growth and sayings such as Mark 13:32. The passages establish genuine humanity more securely than they explain its psychological mechanism. Oriental Orthodox traditions also confess full deity and humanity while historically disputing Chalcedonian terminology; do not caricature them as denying either.",
+"id": "F010"
+},
+{
+"n": 4,
+"title": "The Cross in the Gospel Narratives",
+"why": "The cross is central to the gospel but can become an abstract symbol detached from the narratives. Reading the accounts closely allows doctrine to grow from what the texts actually narrate.",
+"build": "Use four Gospel columns aligned by narrated event, with differences preserved. Let users expand each account’s scriptural references and distinguish reported sequence from a proposed combined chronology.",
+"deps": "local Scripture and the site reading view",
+"guardrail": "Do not attribute collective guilt to Jewish people; the texts include varied Jewish actors and Roman authority, and Christian doctrine applies sin universally. The exact calendar date is debated. Do not build an interpretation on Luke 23:34 without noting that the prayer’s first sentence has a textual variant.",
+"id": "F016"
+},
+{
+"n": 5,
+"title": "How the New Testament Explains Atonement",
+"why": "One image alone can flatten the Bible’s account. This study helps readers recognize how different passages address guilt, alienation, bondage, death, and transformed life without pretending that all Christian theories are identical.",
+"build": "Create a multi-entry diagram with the human predicament on one side and the relevant biblical image on the other. Every connection opens a paragraph and displays where the image stops explaining.",
+"deps": "local Scripture and the site reading view",
+"guardrail": "The strongest conclusion is Christ’s decisive saving self-giving, with several complementary biblical descriptions. Debate remains over mechanism, scope, and how images fit together. Do not depict the Father as unwilling to forgive until a loving Son changes his mind: 2 Corinthians 5:19 locates reconciliation in God’s own action in Christ.",
+"id": "F017"
+},
+{
+"n": 6,
+"title": "The Resurrection at the Center of Christian Hope",
+"why": "The resurrection is not an optional illustration of hope. Paul explicitly makes the truth of Christian proclamation and future resurrection depend on it, giving readers a clear sense of its doctrinal importance.",
+"build": "Link the narrated appearances to an argument map of 1 Corinthians 15: proclamation, counterfactual, firstfruits, and final victory. Keep disputed ordering of appearances visibly separate from the theological claims.",
+"deps": "local Scripture and the site reading view",
+"guardrail": "The Gospels do not supply a single effortless combined sequence. Some appearances listed by Paul are not narrated elsewhere. Preserve those limits rather than inventing missing scenes. Bodily resurrection does not mean that every property of present mortal life remains unchanged.",
+"id": "F018"
+},
+{
+"n": 7,
+"title": "Justification and Peace with God",
+"why": "This is a central doctrine for understanding salvation and a major place where Christians talk past one another. Close comparison lets readers see both shared affirmations and the remaining interpretive disagreements.",
+"build": "Create a comparison matrix of biblical text, question addressed, and each tradition’s interpretation. Display common ground first, then clarify which terms have different definitions.",
+"deps": "F-S03, F-S10",
+"guardrail": "Editorial judgment: any adequate account must preserve unearned grace and the necessity of living faith. The precise relation of verdict and renewal remains debated. Avoid the caricature that Catholics teach salvation earned without grace or Protestants teach that transformed life is irrelevant.",
+"id": "F023"
+},
+{
+"n": 8,
+"title": "Perseverance and the Warning Passages",
+"why": "This debate affects preaching, assurance, and care for people who fail. The study should keep promises and warnings together, allowing neither a careless presumption nor an interpretation that removes every ground for hope.",
+"build": "Build a side-by-side argument map in which every view must explain the same five passage units. Distinguish a view’s direct textual observations from its harmonizing inference.",
+"deps": "F-S02, F-S04, F-S05",
+"guardrail": "Editorial judgment: perseverance is necessary and God’s keeping is powerful; the texts should not be used to trivialize either. The logical reconciliation remains disputed. Hebrews' warning against repudiating Christ should not be equated with every lapse or unwanted thought.",
+"id": "F029"
+},
+{
+"n": 9,
+"title": "Baptism and Belonging to Christ",
+"why": "The topic should begin with the range of biblical statements rather than a denominational definition alone. Readers can then see why baptism matters and why Christians disagree about language such as sign, means of grace, and regeneration.",
+"build": "Use a passage matrix with command, meaning, response, and community columns. Add tradition overlays while keeping the same passages visible to every reader.",
+"deps": "F-S02, F-S11",
+"guardrail": "Editorial judgment: baptism is commanded and Christ-centered, with rich saving associations. The exact relation between sign, faith, and grace requires synthesis and remains disputed. Do not equate sacramental theology with magic or symbolic theology with the claim that baptism is unimportant.",
+"id": "F031"
+},
+{
+"n": 10,
+"title": "The Lord's Supper Remembrance and Participation",
+"why": "This central Christian practice is both unifying and disputed. Its biblical setting exposes an often-neglected connection between eucharistic theology and how the church treats poor or excluded members.",
+"build": "Build a shared Scripture panel with tabs for remembrance, participation, covenant, and community. Below it compare each tradition’s account of presence, faith, and sacrifice using neutral definitions.",
+"deps": "F-S02, F-S06, F-S15, F-S16, F-S17",
+"guardrail": "Editorial judgment: the text requires more than a private mental reminder, including communal accountability; it does not supply the later metaphysical vocabulary by itself. Avoid saying that Catholic teaching re-crucifies Christ, or that every Protestant treats the meal as empty symbolism. John 6’s precise eucharistic relation is also debated.",
+"id": "F033"
+},
+{
+"n": 11,
+"title": "Scripture Authority and Responsible Reading",
+"why": "A Bible-first project needs more than many citations. Readers must learn why context matters, how to distinguish a narrator’s report from approval, and why a verse cannot be made to answer every later question.",
+"build": "Create an interpretation workflow: read the paragraph, identify genre and speaker, locate the book’s argument, compare relevant passages, then distinguish observation from application. Show a worked example from Mark 7.",
+"deps": "F-S05, F-S19",
+"guardrail": "The cited verses do not list every book of the canon or settle every doctrine of inerrancy. Scripture’s authority does not make a reader’s interpretation inerrant. Do not treat an isolated phrase from Job’s friends or a villain’s speech as an endorsed divine proposition.",
+"id": "F034"
+},
+{
+"n": 12,
+"title": "A Library with a Story: How the Bible Fits Together",
+"why": "Readers often confuse the order printed in a Bible with the order of events. A book map gives newcomers a place to stand and prevents advanced cross-references from becoming disconnected verse collections.",
+"build": "Build a book shelf that switches between printed order, literary group, and narrated period. Each book opens a short contextual summary and three passage links; mark uncertain dates with ranges rather than a fixed point.",
+"deps": "L-S03",
+"guardrail": "\"Old\" does not mean worthless: Romans 15:4 explicitly gives earlier Scripture an ongoing purpose. Christian unity of Scripture should not erase Jewish readings or treat every Israelite institution as a coded prediction. Distinguish a book’s setting from its composition date.",
+"id": "L001"
+},
+{
+"n": 13,
+"title": "The Torah: Rescue Before Rules",
+"why": "Leviticus becomes less alien when its holy dwelling stands inside the rescue story. Deuteronomy’s sermons make sense when heard by a generation about to live differently from its parents.",
+"build": "Create five connected panels, each with opening situation, turning point, ending location, and unanswered question. Selecting a command reveals its narrative setting and related New Testament discussion without replacing the Torah passage.",
+"deps": "local Scripture and the site reading view",
+"guardrail": "This outline should not imply that grace begins only in the New Testament or that Christians apply every Mosaic command unchanged. Christian traditions distinguish covenant continuity and discontinuity differently; explore those debates separately through Matthew 5:17-20, Acts 15:1-29, and Galatians 3:15-29.",
+"id": "L003"
+},
+{
+"n": 14,
+"title": "Exodus Routes: Plot the Evidence Before the Line",
+"why": "Emmaus already has an Exodus map. Its largest research opportunity is greater reliability: a confidently drawn line can conceal uncertain place identifications and make a popular hypothesis appear archaeologically established.",
+"build": "For each proposed line show source, dated publication, candidate-site evidence, chronological assumptions, and unresolved contradictions. Default to textual stages and uncertainty regions. Keep travel distance, terrain, and water calculations conditional on a selected, documented route.",
+"deps": "L-S18, L-S20",
+"guardrail": "Editorial judgment: no consulted evidence establishes Nuweiba/Jabal al-Lawz as the leading alternative or fixes Sinai. Present it as one disputed proposal only if responsibly sourced; avoid decorative parity with better-studied candidates. Neither a traditional pilgrimage location nor a dramatic landscape establishes biblical identity.",
+"id": "L016"
+},
+{
+"n": 15,
+"title": "Four Gospels, Four Narrated Routes into the Same Good News",
+"why": "A reader who knows only a blended life of Jesus can miss why a saying appears at a particular point. This module makes comparison serve close reading instead of erasing each evangelist’s argument.",
+"build": "Extend Emmaus’s book library with four horizontal reading tracks. Selecting a shared scene highlights each parallel while preserving surrounding paragraphs. A separate comparison drawer distinguishes agreement, omission, different wording, and genuine chronological tension.",
+"deps": "local Scripture and the site reading view",
+"guardrail": "Literary emphases are not exclusive ownership: all four Gospels include suffering, fulfillment, discipleship, and resurrection. The traditional author names should not be confused with explicit self-identification in each narrative. A harmony is a proposed synthesis, not a fifth canonical Gospel.",
+"id": "N001"
+},
+{
+"n": 16,
+"title": "The Cross in Four Voices",
+"why": "Familiar devotional summaries often merge the seven sayings into a single sequence that no Gospel gives. A comparison teaches the theological richness of each account while keeping the textual evidence visible.",
+"build": "Create a four-column scene matrix with filters for speech, witnesses, mockery, Scripture, signs, and burial transition. Display the traditional seven-sayings collection as a devotional grouping with its proposed ordering clearly labeled.",
+"deps": "local Scripture and the site reading view",
+"guardrail": "Luke 23:34’s forgiveness saying has significant manuscript variation and belongs with a textual note, not silent certainty. No passage assigns collective guilt to every Jewish person. The narratives identify particular actors and also place the execution within Roman authority.",
+"id": "N013"
+},
+{
+"n": 17,
+"title": "Resurrection Witnesses: What Each Account Actually Reports",
+"why": "The resurrection is foundational, but a neat harmonized chart can hide genuine differences in narrative detail. Transparent comparison strengthens literacy and prevents claims that depend on invented travel or unreported conversations.",
+"build": "Extend Emmaus’s Gospel material with columns for source, participants, place, time, actions, and certainty. Offer separate tracks for tomb discovery, appearances, and later visions. Connect each record to the source paragraph and show competing correlations without merging records automatically.",
+"deps": "local Scripture and the site reading view",
+"guardrail": "The number and placement of angelic figures, women’s sequences, and Jerusalem/Galilee instructions require careful comparison. Mark 16:9-20 belongs in a visibly marked textual appendix. Editorial judgment: affirm what the sources state while leaving their complete combined chronology unresolved.",
+"id": "N014"
+},
+{
+"n": 18,
+"title": "Paul's Journeys with Letters Attached and Dates Qualified",
+"why": "Readers can understand why a letter addresses particular people and crises when it sits beside ministry events. They also need to know which familiar missionary-journey labels are organizing conventions rather than phrases Paul uses for his life.",
+"build": "Add letter envelopes to existing route segments, clickable to show internal dating clues. Display date ranges, uncertain correlations, named companions, and planned routes. A switch hides all nonbiblical dates so readers can inspect the narrative sequence alone.",
+"deps": "N-S20, N-S21",
+"guardrail": "Galatians 2’s visit is identified by interpreters with Acts 11 or Acts 15; that decision affects early chronology. Do not turn \"first, second, third journey\" into a complete account of every trip. Post-Acts ministry and later martyrdom belong in a separately sourced continuation.",
+"id": "N027"
+},
+{
+"n": 19,
+"title": "Sennacherib and Hezekiah: Two Accounts of 701 BCE",
+"why": "This is an unusually rich case for learning how historical corroboration works. Agreement on rulers and conflict is substantial, while silence about an event and differences in numbers must be treated honestly.",
+"build": "Offer an event-alignment table with columns for Kings, Isaiah, and the prism. Highlight shared names and payments while placing silence, contradiction, and theological explanation in separate rows.",
+"deps": "A-S04",
+"guardrail": "One-campaign and multi-stage reconstructions attempt to explain narrative seams and tribute differences; the consulted evidence does not settle every chronological question. A plague explanation remains a hypothesis. Do not claim that the prism describes the angel of 2 Kings 19:35, or that royal silence proves every detail of the account.",
+"id": "A004"
+},
+{
+"n": 20,
+"title": "The Dead Sea Scrolls: Continuity and Variation Together",
+"why": "The reader learns why textual criticism exists without equating variants with total textual uncertainty. A visible manuscript comparison can replace slogans about either flawless uniformity or wholesale corruption.",
+"build": "Provide a manuscript timeline and a controlled comparison of selected passages, classifying each difference as spelling, wording, expansion, or arrangement. A separate bookshelf panel distinguishes biblical works from other Qumran literature.",
+"deps": "A-S09",
+"guardrail": "Do not say every scroll came from the same community or that all Dead Sea finds date to the same centuries; other Judean Desert collections differ. The Essene association is influential but its extent remains debated. Digitized images do not remove the need for trained decipherment or establish the date of a book’s original composition.",
+"id": "A008"
+},
+{
+"n": 21,
+"title": "The Census of Quirinius: An Honest Chronology Workshop",
+"why": "An advanced reference should show difficult historical questions plainly. The reader can distinguish Luke’s theological purpose and narrative claims from proposals made to reconcile them with external records.",
+"build": "Display two timelines with the independently attested anchors and a third layer for proposed reconciliations. A grammar panel should show why first and before translations are debated rather than treating one English rendering as decisive.",
+"deps": "A-S17, A-S21",
+"guardrail": "An earlier census or earlier administrative role could reconcile the accounts but needs evidence not presently established. Reading the Greek as before Quirinius is a proposed grammatical solution, not the natural majority translation. A chronological conflation by Luke is the simplest historical explanation on the currently presented evidence; the exact mechanism remains uncertain and is distinct from a judgment on the whole Gospel.",
+"id": "A017"
+},
+{
+"n": 22,
+"title": "Where Does Mark End? Manuscripts and Resurrection Witness",
+"why": "The passage is conspicuous in modern translation footnotes and sometimes used to unsettle readers. A careful comparison makes the actual uncertainty intelligible while keeping the resurrection announcement already present in Mark visible.",
+"build": "Create a manuscript-family overview with the short, long, and abrupt endings visible. Let readers see how Mark 14:28 and 16:7 point toward Galilee before they compare later ending traditions.",
+"deps": "A-S23, A-S44",
+"guardrail": "Traditions differ in liturgical and canonical treatment, and some defenders emphasize widespread reception and early attestation. These matter historically but do not outweigh the combined case for secondary composition here. Do not build a distinctive snake-handling practice on this text; narrative signs are not an instruction to manufacture danger. Lost-ending versus intentional-ending theories remain uncertain.",
+"id": "A024"
+},
+{
+"n": 23,
+"title": "Love of Neighbor Across Ethnic Boundaries",
+"why": "This study equips the site to address a central biblical theme without reducing it to modern slogans. It also demonstrates how story, command, and church decision illuminate one another.",
+"build": "Make a boundary-crossing map with characters, risk, cost, and outcome. Link the parable, Acts 10, and Acts 15 so users can compare individual mercy with institutional discernment.",
+"deps": "local Scripture and the site reading view",
+"guardrail": "The church’s decisions in Acts 15 do not provide a simplistic template for every later dispute. Do not weaponize the passages to erase legitimate doctrinal differences or the continuing significance of Jewish Scripture.",
+"id": "S010"
+},
+{
+"n": 24,
+"title": "The Kingdom Already Here and Still Coming",
+"why": "This is one of the most important organizing themes for Jesus' teaching and the whole Bible. It helps readers place parables, miracles, ethics, and hope on one timeline.",
+"build": "Use a kingdom timeline with present signs, hidden growth, ethical practices, and future judgment. Let users compare a parable’s temporal emphasis before reading an eschatological system.",
+"deps": "local Scripture and the site reading view",
+"guardrail": "Christian traditions disagree about the kingdom’s relation to the church, Israel, and millennium. All positions must address Jesus' present proclamation and future consummation.",
+"id": "S011"
+},
+{
+"n": 25,
+"title": "Revelation's Throne Lamb and New Creation",
+"why": "Readers often approach Revelation as a codebook. A visual sequence can restore its worshipful, pastoral, and justice-centered purpose.",
+"build": "Build a scroll-to-city visual with worship, judgment, martyr witness, and healing layers. Add an Old Testament image index that shows repeated motifs without flattening every reuse into identical meaning.",
+"deps": "local Scripture and the site reading view",
+"guardrail": "Historicist, preterist, futurist, and idealist readings identify different relationships between visions and history. The book’s explicit calls to endurance and worship are clearer than a date chart for every headline event.",
+"id": "S019"
+}
+],
+"expansion": [
+{
+"n": 26,
+"id": "E001",
+"title": "The Camp of Israel",
+"why": "One page, one animation, and the reader never forgets that the presence of God sits at the center of the nation. Reuses the tabernacle plan already in Emmaus."
+},
+{
+"n": 27,
+"id": "E009",
+"title": "Two Kingdoms, One Timeline",
+"why": "The single most clarifying visual for the second half of the Old Testament; becomes the spine for the prophets, the History entries, and the archaeology pins."
+},
+{
+"n": 28,
+"id": "E004",
+"title": "Herod's Temple Mount and the Soreg",
+"why": "Anchors every Gospel temple scene, Acts 21, and Ephesians 2 to a plan and a surviving artifact."
+},
+{
+"n": 29,
+"id": "E006",
+"title": "Four Sanctuaries Side by Side",
+"why": "The whole Bible’s storyline in four plans; connects S020, N020, and E003-E005 into one sequence."
+},
+{
+"n": 30,
+"id": "E017",
+"title": "Counting the Prophecies Honestly",
+"why": "Replaces an inflated number with a graded table, which is both more truthful and more persuasive; feeds Flagship 07."
+},
+{
+"n": 31,
+"id": "E028",
+"title": "The 'I Am' Sayings Mapped",
+"why": "Turns a familiar list into a map of settings and feasts; pairs with E029 and S012."
+},
+{
+"n": 32,
+"id": "E012",
+"title": "Seven Churches, One Postal Route",
+"why": "A beginner-friendly map with strong local color and a ready CC map set to reference."
+},
+{
+"n": 33,
+"id": "E011",
+"title": "Jerusalem in the Days of Jesus",
+"why": "The Passion Week reader (Flagship 04) needs a city; this supplies it with confidence levels."
+},
+{
+"n": 34,
+"id": "E041",
+"title": "The Daughters of Zelophehad",
+"why": "A short, surprising, well-documented story that demonstrates the site’s interest in overlooked people; low build cost."
+},
+{
+"n": 35,
+"id": "E058",
+"title": "Tanakh Order and Christian Order",
+"why": "A shelf diagram that changes how readers hear the Old Testament’s ending; cheap to build, widely shareable."
+}
+],
+"questions": [
+{
+"id": "R01",
+"q": "When does a promise become a covenant?",
+"body": "Compare divine promise, oath, sign, and covenant in Genesis 12, 15, 17, Exodus 19-24, and Hebrews 8.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R02",
+"q": "How should Christians read genealogies?",
+"body": "Track literary, theological, and chronological functions in Genesis, Chronicles, Matthew, and Luke.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R03",
+"q": "Why does God ask Abraham to offer Isaac?",
+"body": "Read Genesis 22 with promise, testing, substitution, and later biblical echoes kept distinct.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R04",
+"q": "What does \"know\" mean in the Bible?",
+"body": "Study relational knowledge in Genesis 4, Amos 3, John 10, and 1 John 2 without reducing it to information.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R05",
+"q": "Is the conquest language literal, hyperbolic, or layered?",
+"body": "Compare Joshua, Judges, Deuteronomy, and archaeological evidence while labeling every inference.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R06",
+"q": "What is the biblical meaning of rest?",
+"body": "Follow Sabbath, land rest, Jesus, Hebrews 3-4, and the new creation.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R07",
+"q": "Why do prophets use marriage language?",
+"body": "Trace covenant fidelity, accusation, judgment, and restoration in Hosea, Jeremiah, Ezekiel, and Revelation.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R08",
+"q": "What does \"day of the LORD\" include?",
+"body": "Map near historical judgments and final hope across Joel, Amos, Zephaniah, and 2 Peter.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R09",
+"q": "Does wisdom promise a trouble-free life?",
+"body": "Read Proverbs with Job and Ecclesiastes, then classify proverb, lament, and observation.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R10",
+"q": "Why are there two creation accounts?",
+"body": "Compare Genesis 1 and 2 by genre, sequence, emphasis, and canonical purpose without inventing conflict.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R11",
+"q": "What is the image of God?",
+"body": "Join Genesis 1, Psalm 8, James 3, and Colossians 3 to ask about dignity, vocation, and renewal.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R12",
+"q": "How does Scripture portray disability and healing?",
+"body": "Read John 9, Mark 2, Leviticus 21, and 2 Samuel 9 with careful attention to stigma and agency.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R13",
+"q": "What is a biblical lament?",
+"body": "Build a reusable grammar from complaint, memory, petition, trust, and praise.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R14",
+"q": "What does \"fear of the LORD\" mean?",
+"body": "Compare reverence, terror, wisdom, and covenant loyalty across Proverbs, Exodus, and the Gospels.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R15",
+"q": "Why are angels unnamed in most scenes?",
+"body": "Study messenger, worship, protection, and judgment without turning every angel into a personal guide.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R16",
+"q": "How should readers handle divine violence?",
+"body": "Put conquest, judgment, patience, prophetic critique, cross, and final judgment into one evidence-graded workspace.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R17",
+"q": "What is the role of the stranger?",
+"body": "Track resident foreigners, Rahab, Ruth, the Samaritan, Cornelius, and the nations in Revelation.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R18",
+"q": "How does the Bible discuss debt?",
+"body": "Compare debt release, slavery, generosity, and Jesus economic parables; do not leap to a modern policy.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R19",
+"q": "What is biblical inheritance?",
+"body": "Trace land, sonship, resurrection, and kingdom inheritance from Numbers to Romans and 1 Peter.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R20",
+"q": "Why does Jesus use meals so often?",
+"body": "Map table fellowship, purity, honor, betrayal, Eucharist, and the marriage supper.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R21",
+"q": "What is the \"kingdom of heaven\"?",
+"body": "Compare Matthew wording with Mark and Luke and distinguish kingdom, church, and final renewal.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R22",
+"q": "How does Jesus read the Psalms?",
+"body": "Index Psalm quotations and allusions in the Gospels, Acts, and Hebrews.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R23",
+"q": "What is a parable allowed to do?",
+"body": "Study ambiguity, reversal, judgment, and audience response rather than treating each detail as a code.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R24",
+"q": "How does the Spirit guide Acts?",
+"body": "Map speeches, visions, prohibitions, prophecy, and communal decisions while preserving narrative tension.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R25",
+"q": "What is the relationship between faith and sight?",
+"body": "Compare seeing signs, believing testimony, walking by faith, and final vision.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R26",
+"q": "How do Christians disagree about election?",
+"body": "Place Calvinist, Arminian, Lutheran, Catholic, Orthodox, and Wesleyan statements beside Romans 9, John 6, and 1 Timothy 2.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R27",
+"q": "What does \"once for all\" mean?",
+"body": "Trace Hebrews, Romans, and 1 Peter on Christ sacrifice and the continuing life of obedience.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R28",
+"q": "How should the church handle money?",
+"body": "Compare Acts 2-5, 1 Corinthians 16, 2 Corinthians 8-9, and 1 Timothy 6.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R29",
+"q": "What is spiritual warfare in the New Testament?",
+"body": "Read temptation, exorcism, armor, suffering, and Revelation as distinct contexts.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R30",
+"q": "How does Scripture teach children?",
+"body": "Study Deuteronomy 6, Psalm 78, Mark 10, Ephesians 6, and Timothy without assuming one family model.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R31",
+"q": "What is the biblical use of silence?",
+"body": "Contrast silence as listening, grief, witness, withdrawal, and judgment.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R32",
+"q": "How do biblical writers quote one another?",
+"body": "Build a quotation graph that records wording, context, and fulfillment claim.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R33",
+"q": "What does \"all Israel\" mean in Romans 11?",
+"body": "Present major readings with the paragraph, Old Testament echoes, and denominational statements visible.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R34",
+"q": "How should Revelation be dated?",
+"body": "Compare internal clues, early witnesses, and historical proposals; label certainty and disagreement.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R35",
+"q": "What is the meaning of the Lord's Day?",
+"body": "Study Sabbath, resurrection, assembly, and later Christian practice without assuming a single timeline.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R36",
+"q": "How can a study avoid proof texting?",
+"body": "Turn the responsible workflow into an interactive checklist with a required context and caveat field.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R37",
+"q": "What does biblical justice require?",
+"body": "Map courts, impartiality, gleaning, prophets, Jesus, James, and final judgment.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R38",
+"q": "What is the Bible's theology of work?",
+"body": "Connect creation vocation, Sabbath, craft, idleness, labor dignity, and new creation.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R39",
+"q": "How does God respond to doubt?",
+"body": "Compare Gideon, Psalms, Habakkuk, Thomas, and Jude with different kinds of uncertainty.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R40",
+"q": "What makes a witness credible?",
+"body": "Study two witnesses, apostolic testimony, women at the tomb, public signs, and the Spirit’s witness.",
+"posture": "Scripture-first research question",
+"visual": "Question tree + linked passage trail",
+"new": false
+},
+{
+"id": "R41",
+"q": "Why does the New Testament never cite Isaiah 9:6?",
+"body": "Compare the passages the apostles quote with the ones Christians quote most; ask what the difference reveals about apostolic reading.",
+"posture": "Scripture-first research question",
+"visual": "Two-column citation table",
+"new": true
+},
+{
+"id": "R42",
+"q": "Was the temple curtain the inner one or the outer one?",
+"body": "Weigh Hebrews 10:20, Josephus’s description, and Matthew’s cosmic signs; decide what each option would mean.",
+"posture": "Debated interpretation",
+"visual": "Cross-section with both curtains",
+"new": true
+},
+{
+"id": "R43",
+"q": "What did Jesus's hearers think a 'kingdom of priests' meant?",
+"body": "Trace Exodus 19:6 through Isaiah 61:6, 1 Peter 2:9, and Revelation 1:6; test whether the phrase describes status, function, or both.",
+"posture": "Scripture-first research question",
+"visual": "Phrase trail",
+"new": true
+},
+{
+"id": "R44",
+"q": "How reliable are the psalm headings?",
+"body": "Compare Hebrew, Septuagint, and Qumran headings; ask what a heading claims and what it cannot establish.",
+"posture": "Debated interpretation",
+"visual": "Heading comparison grid",
+"new": true
+},
+{
+"id": "R45",
+"q": "Why is Melchizedek given no genealogy?",
+"body": "Read Genesis 14, Psalm 110, and Hebrews 7 with attention to what Hebrews argues from silence, and where that method has limits.",
+"posture": "Scripture-first research question",
+"visual": "Argument map",
+"new": true
+},
+{
+"id": "R46",
+"q": "Did Israel's camp really form a cross?",
+"body": "Compute the tribal totals, draw the camp to scale, and ask what a modern shape observation can and cannot mean.",
+"posture": "Speculative observation",
+"visual": "Scale drawing with toggles",
+"new": true
+},
+{
+"id": "R47",
+"q": "What is the relationship between Ezekiel's temple and Revelation's city?",
+"body": "List every shared image and every difference, especially the absence of a temple in Revelation 21:22.",
+"posture": "Scripture-first research question",
+"visual": "Shared-image matrix",
+"new": true
+},
+{
+"id": "R48",
+"q": "Which 'Mary' is which?",
+"body": "Sort the six or seven Marys of the New Testament by Gospel and scene; identify where identifications are certain, probable, or guessed.",
+"posture": "Scripture-first research question",
+"visual": "Name disambiguation chart",
+"new": true
+},
+{
+"id": "R49",
+"q": "How did money changers actually operate in the temple?",
+"body": "Combine Exodus 30, the Tyrian shekel requirement, Mishnah Shekalim, and the Gospel accounts; separate evidence from assumption about Jesus’s motive.",
+"posture": "Historically supported",
+"visual": "Transaction flow diagram",
+"new": true
+},
+{
+"id": "R50",
+"q": "What should a site do with a beloved claim it cannot verify?",
+"body": "Use the kezazah, the four-inch curtain, and the 153 species as test cases for an editorial policy on popular illustrations.",
+"posture": "Editorial policy question",
+"visual": "Decision tree",
+"new": true
+}
+],
+"themes": [
+{
+"title": "Creation and New Creation",
+"span": "Genesis 1-3 -> Psalms -> John 1 -> Romans 8 -> Revelation 21-22",
+"experience": "Scroll timeline; image motif network",
+"entries": [
+"E002",
+"E005",
+"E061",
+"E062"
+]
+},
+{
+"title": "Promise, Covenant, and Faithfulness",
+"span": "Genesis -> Exodus -> Davidic promise -> Jeremiah 31 -> Hebrews",
+"experience": "Covenant matrix; promise trail",
+"entries": [
+"E010",
+"E020",
+"E024",
+"E026",
+"E044"
+]
+},
+{
+"title": "Exodus and Salvation",
+"span": "Exodus -> prophets -> Gospels -> 1 Corinthians 10 -> Revelation",
+"experience": "Journey map; pattern comparison",
+"entries": [
+"E001",
+"E008",
+"E013",
+"E016"
+]
+},
+{
+"title": "Kingdom and Rule",
+"span": "Daniel 7 -> Gospels -> Acts -> 1 Corinthians 15 -> Revelation",
+"experience": "Already/not-yet timeline",
+"entries": [
+"E009",
+"E014",
+"E055",
+"E057"
+]
+},
+{
+"title": "Temple and Presence",
+"span": "Eden -> tabernacle -> temple -> Christ -> church -> city",
+"experience": "Architecture sequence; presence layers",
+"entries": [
+"E003",
+"E004",
+"E005",
+"E006",
+"E022",
+"E023",
+"E030"
+]
+},
+{
+"title": "Holiness, Purity, and Mercy",
+"span": "Leviticus -> prophets -> Jesus -> Acts 10 -> Hebrews",
+"experience": "Purity boundary diagram",
+"entries": [
+"E007",
+"E022",
+"E046"
+]
+},
+{
+"title": "Justice, Mercy, and the Poor",
+"span": "Torah -> prophets -> Jesus -> James -> final judgment",
+"experience": "Justice practice matrix",
+"entries": [
+"E015",
+"E041",
+"E050"
+]
+},
+{
+"title": "Wisdom, Lament, and Prayer",
+"span": "Job, Psalms, Proverbs, Ecclesiastes -> Jesus -> letters",
+"experience": "Prayer library; lament grammar",
+"entries": [
+"E040",
+"E042",
+"E059",
+"E060"
+]
+},
+{
+"title": "Messiah, Cross, and Resurrection",
+"span": "Isaiah/Psalms -> Gospel passion -> Acts -> Paul -> Hebrews",
+"experience": "Four-voice cross; resurrection witness table",
+"entries": [
+"E017",
+"E018",
+"E019",
+"E025",
+"E027",
+"E030",
+"E031",
+"E032",
+"E052"
+]
+},
+{
+"title": "Spirit, Church, and Mission",
+"span": "Pentecost -> gifts -> unity -> nations -> new creation",
+"experience": "Mission map; gift matrix",
+"entries": [
+"E012",
+"E029",
+"E048",
+"E049",
+"E056"
+]
+},
+{
+"title": "Suffering, Witness, and Hope",
+"span": "Job -> prophets -> Jesus -> 1 Peter -> Revelation",
+"experience": "Endurance pathway; testimony graph",
+"entries": [
+"E018",
+"E035",
+"E047",
+"E053"
+]
+},
+{
+"title": "Scripture, Translation, and Interpretation",
+"span": "Torah reading -> Jesus' citations -> apostolic use -> manuscripts -> translations",
+"experience": "Quotation graph; translation strip",
+"entries": [
+"E037",
+"E058",
+"E059",
+"E060",
+"E061",
+"E062",
+"E063",
+"E064"
+]
+}
+],
+"verification": {
+"confirmed": [
+"Archaeological dates and discoverers: Tel Dan stele (1993-94, Biran; ninth century BCE); Mesha stele (Dhiban, ninth century); Lachish reliefs (Room XXXVI, Nineveh, campaign of 701 BCE); Taylor Prism (691 BCE, acquired 1855); Cyrus Cylinder (Rassam, 1879; after 539 BCE); Pilate stone (Frova, Caesarea, 1961); Merneptah stele (Petrie, 1896; year 5, about 1208 BCE); Hezekiah bulla (Ophel, 2009 excavation, announced 2015); Ketef Hinnom amulets (Barkay, 1979); Pool of Siloam steps (Reich and Shukron, 2004); Delphi Gallio inscription (52 CE).",
+"Historical dates: Samaria’s fall (722 BCE); Jerusalem’s capture (597) and destruction (587/586); Cyrus’s capture of Babylon (539); temple rededication under the Maccabees (164 BCE); the Quirinius census (6 CE) against Herod’s death (4 BCE standard); Council of Chalcedon (451).",
+"Canon counts: Protestant 39 + 27; Catholic 46 + 27; Jewish 24-book grouping of the same Hebrew books.",
+"Textual judgments in A023-A028 (Deuteronomy 32:8, Mark 16, John 7:53-8:11, 1 John 5:7, Goliath’s height, Psalm 22:16) match the NET notes and standard critical editions.",
+"Radiocarbon dating of Jericho’s Middle Bronze destruction to the late seventeenth or sixteenth century BCE (Bruins and van der Plicht), with the about-1400 BCE proposal correctly labeled a minority reassessment."
+],
+"corrected": [
+"Fifteen entries (L003, L005, L006, L009, L010, L013, L018, L033, N001, N007, N009, N028, N029, A016, A020) carried the value 'Bible Literacy' in their Difficulty field, which is a category name, not a level. Each has been reset to Foundational; review individually if a different level is intended.",
+"In 72 entries the Source Notes had been run into the Caveats and Limits paragraph during the original layout. They are now separated into their own labeled block.",
+"Flagship 07 and the prophecy discussions referred generally to fulfillment; E017 now supplies the counting method and the caution about the popular '300 prophecies' figure, which has no single scholarly source."
+],
+"flagged": [
+"Popular claims deliberately downgraded in the new entries: the kezazah ceremony (E033), the 'four-inch curtain horses could not tear' (E030), Jerome’s 153 fish species (E032), the 'gospel in the names of Genesis 5' (E010), the cruciform camp as prophecy (E001), Boaz and Joseph as formal 'types of Christ' (E021, E024), and the round rolling stone (E065).",
+"Contested chronologies left visibly open: Exodus date and route (L016, A011), Ezra’s date (E014), Daniel’s seventy weeks (E019), Herod’s death year (E055), Pauline letter dates (E063), and the divergence of Matthew’s and Luke’s genealogies (E010).",
+"Mishnaic measurements (soreg height, curtain dimensions, court sizes) are labeled as tradition compiled about 200 CE, not as first-century measurement (E004, E030).",
+"Unprovenanced or disputed artifacts are graded lower than excavated ones: the 2011 'Miriam daughter of Yeshua' ossuary (E051), the Al-Yahudu tablets (E053), the Alexander son of Simon ossuary identification (E035), and the Talpiot tomb claims (E065).",
+"Two print sources (E-S19 Payne; E-S27 Bauckham) are cited from secondary summaries and should be checked in the original before their figures appear on a public page."
+]
+},
+"tools": [
+{
+"group": "Original-language and text tools",
+"items": [
+{
+"name": "Blue Letter Bible",
+"desc": "Free interlinear, Strong’s numbers, lexicons, and commentaries. Best for word-study links. Content is proprietary; link rather than copy.",
+"url": "https://www.blueletterbible.org/"
+},
+{
+"name": "BibleHub",
+"desc": "Parallel translations, interlinear, and topical indexes; fast for comparing renderings. Link, do not scrape.",
+"url": "https://biblehub.com/"
+},
+{
+"name": "STEP Bible (Tyndale House)",
+"desc": "Scholarly, free text-and-lexicon tool; already in the source registry as F-S19.",
+"url": "https://www.stepbible.org/"
+},
+{
+"name": "NET Bible",
+"desc": "Full translation with 60,000+ translator notes, freely readable; the notes are the best free apparatus for textual questions.",
+"url": "https://netbible.org/"
+},
+{
+"name": "Sefaria",
+"desc": "Hebrew Bible, Mishnah, Talmud, midrash, and medieval commentary with English; indispensable for checking Jewish interpretation at the source.",
+"url": "https://www.sefaria.org/"
+}
+]
+},
+{
+"group": "Teaching and thematic resources",
+"items": [
+{
+"name": "BibleProject",
+"desc": "Free animated videos on every book and on themes (temple, water, mountain, seven), plus downloadable posters. The gold standard for visual thematic teaching; content is copyrighted, so link and cite rather than reproduce posters.",
+"url": "https://bibleproject.com/"
+},
+{
+"name": "Bible Odyssey (Society of Biblical Literature)",
+"desc": "Short peer-written articles by academic scholars; useful for balanced summaries of contested topics.",
+"url": "https://www.bibleodyssey.org/"
+},
+{
+"name": "That the World May Know (Ray Vander Laan)",
+"desc": "On-location video teaching on first-century Jewish culture; commercial, cite as a resource.",
+"url": "https://www.thattheworldmayknow.com/"
+},
+{
+"name": "Our Rabbi Jesus (Lois Tverberg)",
+"desc": "Essays on Jewish context of Jesus’s teaching; popular level with sources.",
+"url": "https://ourrabbijesus.com/"
+},
+{
+"name": "Open Yale Courses (Christine Hayes, Dale Martin)",
+"desc": "Free university lectures already used throughout the source registry; Creative Commons BY-NC-SA.",
+"url": "https://oyc.yale.edu/"
+}
+]
+},
+{
+"group": "Maps and visual assets, with licenses",
+"items": [
+{
+"name": "Bible Mapper (David P. Barrett)",
+"desc": "Free Windows tool; the developer states maps created with it carry no copyright restriction. The safest way to produce original, reusable maps. Confirm current terms.",
+"url": "https://www.biblemapper.com/"
+},
+{
+"name": "FreeBibleimages",
+"desc": "Hundreds of map and illustration sets under Creative Commons Attribution-NonCommercial (some ND or SA). Usable on a noncommercial site with attribution; not usable if the site sells anything or runs ads.",
+"url": "https://www.freebibleimages.org/"
+},
+{
+"name": "Headwaters Christian Resources",
+"desc": "A set of 41 Bible maps under CC BY-NC-SA; attribution and share-alike required.",
+"url": "https://headwatersresources.org/"
+},
+{
+"name": "Wikimedia Commons",
+"desc": "Public-domain nineteenth-century plans (Schick, Smith’s Bible Dictionary) and many CC images; every file has its own license and must be checked individually.",
+"url": "https://commons.wikimedia.org/"
+},
+{
+"name": "Digital Dead Sea Scrolls (Israel Museum)",
+"desc": "High-resolution scroll images for viewing; reuse terms restrict republication, so embed by link.",
+"url": "http://dss.collections.imj.org.il/"
+},
+{
+"name": "Museum collection databases (British Museum, Israel Museum, Louvre, Met)",
+"desc": "Object photographs and records. The British Museum and the Met release many images under CC BY-NC-SA or CC0 respectively; the Israel Museum and Louvre generally reserve rights. Check each object page.",
+"url": "https://www.britishmuseum.org/collection"
+},
+{
+"name": "ESV Study Bible, Zondervan Atlas, Bible Timeline wall charts",
+"desc": "Excellent reference designs; fully copyrighted. Use for inspiration only; redraw from the biblical text, never trace.",
+"url": ""
+}
+]
+},
+{
+"group": "Reference works to consult before publishing a cultural claim",
+"items": [
+{
+"name": "Craig S. Keener, IVP Bible Background Commentary",
+"desc": "Verse-by-verse cultural notes with restraint; the first check for any “in Jesus’s day” claim.",
+"url": ""
+},
+{
+"name": "Kenneth Bailey and Amy-Jill Levine (read together)",
+"desc": "Bailey for Middle Eastern cultural readings, Levine for the Jewish scholarly corrective; using both prevents one-sided reconstructions.",
+"url": ""
+},
+{
+"name": "Michael Heiser, The Unseen Realm",
+"desc": "Stimulating on the divine council thread; treat as one debated framework (see A023, A042) rather than settled background.",
+"url": ""
+},
+{
+"name": "N. T. Wright, Jesus and the Victory of God; Paul and the Faithfulness of God",
+"desc": "Second Temple context for the Gospels and Paul at academic depth.",
+"url": ""
+},
+{
+"name": "Rachel Hachlili; L. Y. Rahmani",
+"desc": "Standard references on Jewish burial and ossuaries.",
+"url": ""
+}
+]
+}
+],
+"audit": "What the audit shows. Existing resources fall into two groups: visually strong but shallow (devotional graphics, most map sets) or scholarly but text-heavy (commentaries, translator notes, museum records). Very few combine original, accurate, tiered visuals with first-century context and honest handling of disputed questions. That combination is Emmaus’s opening. The licensing rule that follows from the audit is simple: generate original maps and diagrams from the biblical text and from tools whose output is unrestricted; use noncommercial assets only while the site is noncommercial; embed museum images by link; never trace copyrighted charts.",
+"sources": [
+{
+"id": "L-S03",
+"category": "Academic Biblical Scholarship",
+"why": "University lecture by a professor of religious studies; course biography records a Berkeley PhD and scholarship in Jewish texts. Historical-critical assumptions are distinguished from biblical assertions.",
+"consulted": "Transcript sections on structure and canonical arrangements, plus course author biography.",
+"supports": "Torah, Prophets, Writings; Jewish 24-book grouping and differences of arrangement.",
+"title": "Christine Hayes: RLST 145, Lecture 1: The Parts of the Whole",
+"publisher": "Yale University, Open Yale Courses",
+"url": "https://oyc.yale.edu/religious-studies/rlst-145/lecture-1"
+},
+{
+"id": "L-S04",
+"category": "Academic Biblical Scholarship",
+"why": "Academic lecture with explicit discussion of competing historical reconstructions; used narrowly for literary method and uncertainty.",
+"consulted": "Transcript, especially discussion of sparse narration, promises, and limits of archaeological parallels.",
+"supports": "Narrative economy; distinguishing observed details from reconstructed motives; disputed patriarchal dating.",
+"title": "Christine Hayes: RLST 145, Lecture 6: Biblical Narrative: The Stories of the Patriarchs",
+"publisher": "Yale University, Open Yale Courses",
+"url": "https://oyc.yale.edu/religious-studies/rlst-145/lecture-6"
+},
+{
+"id": "L-S05",
+"category": "Academic Biblical Scholarship",
+"why": "University academic course; interpretation is presented as scholarship rather than scriptural authority.",
+"consulted": "Lecture overview and transcript sections on rescue and covenant.",
+"supports": "Exodus as Israel’s foundational rescue and covenant narrative.",
+"title": "Christine Hayes: RLST 145, Lecture 8: Exodus: From Egypt to Sinai",
+"publisher": "Yale University, Open Yale Courses",
+"url": "https://oyc.yale.edu/religious-studies/rlst-145/lecture-8"
+},
+{
+"id": "L-S06",
+"category": "Academic Biblical Scholarship",
+"why": "Academic treatment drawing on named scholarship by Jonathan Klawans and Jacob Milgrom; those works were not independently read here. Biblical details are checked separately.",
+"consulted": "Transcript sections on ritual and moral impurity and purification offerings.",
+"supports": "Ritual impurity is not automatically wrongdoing; distinction between holiness and purity; scholarly discussion of purification terminology.",
+"title": "Christine Hayes: RLST 145, Lecture 9: The Priestly Legacy: Cult and Sacrifice, Purity and Holiness",
+"publisher": "Yale University, Open Yale Courses",
+"url": "https://oyc.yale.edu/religious-studies/rlst-145/lecture-9"
+},
+{
+"id": "L-S07",
+"category": "Academic Biblical Scholarship",
+"why": "University lecture presenting scholarly settlement models. Some compressed details require correction from Scripture and should not be copied wholesale.",
+"consulted": "Transcript passages on Joshua/Judges tensions and models of Israel’s emergence.",
+"supports": "Distinction between literary presentation and archaeological reconstruction; gradual emergence and migration as scholarly models.",
+"title": "Christine Hayes: RLST 145, Lecture 12: Life in the Land: Joshua and Judges",
+"publisher": "Yale University, Open Yale Courses",
+"url": "https://oyc.yale.edu/religious-studies/rlst-145/lecture-12"
+},
+{
+"id": "L-S08",
+"category": "Academic Biblical Scholarship",
+"why": "Academic lecture interpreting prophetic form and historical crises; editorial hypotheses are not treated as settled.",
+"consulted": "Transcript on Micah 6, indictment, hope, and the late monarchic setting.",
+"supports": "Literary orientation to prophetic judgment and restoration.",
+"title": "Christine Hayes: RLST 145, Lecture 18: Micah, Zephaniah, Nahum and Habbakuk",
+"publisher": "Yale University, Open Yale Courses",
+"url": "https://oyc.yale.edu/religious-studies/rlst-145/lecture-18"
+},
+{
+"id": "L-S09",
+"category": "Academic Biblical Scholarship",
+"why": "University literary and historical introduction; received collection and composition questions are distinguished.",
+"consulted": "Transcript excerpts on poetic forms, canonical reading, and Ecclesiastes.",
+"supports": "Reading poems as complete literary units and within their received collection.",
+"title": "Christine Hayes: RLST 145, Lecture 21: Biblical Poetry: Psalms and Song of Songs",
+"publisher": "Yale University, Open Yale Courses",
+"url": "https://oyc.yale.edu/religious-studies/rlst-145/lecture-21"
+},
+{
+"id": "L-S10",
+"category": "Academic Biblical Scholarship",
+"why": "Academic introduction to the Persian-era community; not used to settle contested chronology or marriage interpretation.",
+"consulted": "Overview and transcript excerpts on restoration, Yehud, public Torah, and Psalms 44 and 78.",
+"supports": "Persian provincial setting of restoration; contrasting poetic responses to national suffering.",
+"title": "Christine Hayes: RLST 145, Lecture 22: The Restoration: Chronicles, Ezra and Nehemiah",
+"publisher": "Yale University, Open Yale Courses",
+"url": "https://oyc.yale.edu/religious-studies/rlst-145/lecture-22"
+},
+{
+"id": "L-S11",
+"category": "Academic Biblical Scholarship",
+"why": "Academic framing of apocalyptic literature; specific critical reconstruction is distinguished from the text and traditional readings.",
+"consulted": "Lecture overview and transcript excerpts, including Ruth discussion.",
+"supports": "Daniel’s apocalyptic literary setting; reading symbol with its interpretation. Does not establish every historical identification.",
+"title": "Christine Hayes: RLST 145, Lecture 23: Visions of the End: Daniel and Apocalyptic Literature",
+"publisher": "Yale University, Open Yale Courses",
+"url": "https://oyc.yale.edu/religious-studies/rlst-145/lecture-23"
+},
+{
+"id": "L-S12",
+"category": "Academic Biblical Scholarship",
+"why": "Academic comparative reading; biblical quotations and narrator claims are checked directly rather than accepting every rhetorical generalization.",
+"consulted": "Transcript on Esther’s crisis, solidarity, reversals, and Jonah.",
+"supports": "Literary reversal and threatened communal survival in Esther.",
+"title": "Christine Hayes: RLST 145, Lecture 24: Alternative Visions: Esther, Ruth, and Jonah",
+"publisher": "Yale University, Open Yale Courses",
+"url": "https://oyc.yale.edu/religious-studies/rlst-145/lecture-24"
+},
+{
+"id": "L-S19",
+"category": "Academic Biblical Scholarship",
+"why": "University lecture identifying prophetic roles in Samuel and Kings; consulted for literary orientation.",
+"consulted": "Transcript excerpts on Former/Latter Prophets and prophets' confrontation with kings.",
+"supports": "Prophets as royal critics, kingmakers, and characters within the Former Prophets.",
+"title": "Christine Hayes: RLST 145, Lecture 15: Hebrew Prophecy: The Non-Literary Prophets",
+"publisher": "Yale University, Open Yale Courses",
+"url": "https://oyc.yale.edu/religious-studies/rlst-145/lecture-15"
+},
+{
+"id": "N-S07",
+"category": "Academic Biblical Scholarship",
+"why": "Author biography records Th.M. and Ph.D. from Dallas Theological Seminary; discusses opposing arguments. Used critically for provenance alternatives, not his speculative reconstruction of a Colossian heresy.",
+"consulted": "Authorship, imprisonment, setting, and author biography sections opened.",
+"supports": "Arguments concerning Pauline authorship, Ephesus/Rome/Caesarea provenance, conditional dating and uncertainty of the opponents.",
+"title": "Greg Herrick: The Letter to the Colossians",
+"publisher": "Bible.org",
+"url": "https://bible.org/article/letter-colossians"
+},
+{
+"id": "N-S10",
+"category": "Academic Biblical Scholarship",
+"why": "New Testament scholar with Ph.D. and published Greek grammar; presents arguments against his own traditional authorship conclusion. Dispensational assumptions are not imported.",
+"consulted": "Authorship arguments and bibliographic/author sections opened.",
+"supports": "Traditional authorship defense and objections from eschatology, style, tone and literary similarity. Not used for manuscript inventory or a fixed restrainer interpretation.",
+"title": "Daniel B. Wallace: 2 Thessalonians: Introduction, Argument, Outline",
+"publisher": "Bible.org",
+"url": "https://bible.org/seriespage/2-thessalonians-introduction-argument-outline"
+},
+{
+"id": "N-S12",
+"category": "Academic Biblical Scholarship",
+"why": "Yale New Testament and early Christianity professor; explicit historical-critical approach. His late-date reconstruction is one argued position.",
+"consulted": "Transcript sections on authorship, church structure, style and dating read.",
+"supports": "Critical case for post-Pauline authorship, contrasted with traditional case. No dependence on his wider sexual-ethics claims.",
+"title": "Dale B. Martin: Lecture 19: The Household Paul: the Pastorals",
+"publisher": "Open Yale Courses, Yale University",
+"url": "https://oyc.yale.edu/religious-studies/rlst-152/lecture-19"
+},
+{
+"id": "N-S16",
+"category": "Academic Biblical Scholarship",
+"why": "University New Testament lecture with identifiable scholar; its historical reconstruction is distinguished from textual observations.",
+"consulted": "Transcript sections 3-4 on James, wisdom, and faith/works read.",
+"supports": "James within Jewish wisdom traditions and competing ways of construing its relationship to Paul.",
+"title": "Dale B. Martin: Lecture 18: Arguing with Paul?",
+"publisher": "Open Yale Courses, Yale University",
+"url": "https://oyc.yale.edu/religious-studies/rlst-152/lecture-18"
+},
+{
+"id": "N-S17",
+"category": "Academic Biblical Scholarship",
+"why": "University New Testament lecture; expressly presents community reconstruction as an interpretive model.",
+"consulted": "Overview and transcript excerpts on Gospel language and hypothesized community development read.",
+"supports": "Historical community models behind Johannine literature must be labeled hypotheses, not stated contents of letters.",
+"title": "Dale B. Martin: Lecture 12: Johannine Christianity: the Letters",
+"publisher": "Open Yale Courses, Yale University",
+"url": "https://oyc.yale.edu/religious-studies/rlst-152/lecture-12"
+},
+{
+"id": "N-S18",
+"category": "Academic Biblical Scholarship",
+"why": "University New Testament lecture explaining literary form and historical empire context; its certainty about authorship is not adopted.",
+"consulted": "Overview and transcript sections on genre, chronology and Revelation read.",
+"supports": "Apocalyptic conventions; cycles rather than an assumed continuous chronology; Rome/Babylon contextual reading.",
+"title": "Dale B. Martin: Lecture 23: Apocalyptic and Resistance",
+"publisher": "Open Yale Courses, Yale University",
+"url": "https://oyc.yale.edu/religious-studies/rlst-152/lecture-23"
+},
+{
+"id": "N-S26",
+"category": "Academic Biblical Scholarship",
+"why": "New Testament scholar provides extended engagement with historical, theological and stylistic objections, including admissions that stylistic evidence needs explanation.",
+"consulted": "Historical, theological, linguistic and secretary-hypothesis sections read.",
+"supports": "Traditional authorship defense, possible secretary involvement, leadership parallels elsewhere in Paul. Claimed Acts trial-brief purpose is not adopted.",
+"title": "Daniel B. Wallace: 1 Timothy: Introduction, Argument, Outline",
+"publisher": "Bible.org",
+"url": "https://bible.org/seriespage/15-1-timothy-introduction-argument-outline"
+},
+{
+"id": "E-S27",
+"category": "Academic Biblical Scholarship",
+"why": "Survey and defense of a gematria/triangular reading tied to Ezekiel 47; represents the strongest modern case for a symbolic number.",
+"consulted": "Article as summarized in the literature; consult directly before release.",
+"supports": "153 fish proposals.",
+"title": "Richard Bauckham, \"The 153 Fish and the Unity of the Fourth Gospel,\" Neotestamentica 36 (2002)",
+"publisher": "Peer-reviewed journal",
+"url": ""
+},
+{
+"id": "E-S29",
+"category": "Academic Biblical Scholarship",
+"why": "Jewish New Testament scholar’s critique of Christian over-reading of the parables; supplies the counter-case to Bailey on the Prodigal Son and to the purity explanation of the Good Samaritan.",
+"consulted": "Chapters on the Prodigal Son and the Good Samaritan.",
+"supports": "Balanced cultural readings.",
+"title": "Amy-Jill Levine, Short Stories by Jesus (HarperOne, 2014)",
+"publisher": "Print reference",
+"url": ""
+},
+{
+"id": "E-S36",
+"category": "Academic Biblical Scholarship",
+"why": "Definitive study of the name and its history in manuscripts and printed editions.",
+"consulted": "Summary of findings.",
+"supports": "Romans 16:7.",
+"title": "Eldon Jay Epp, Junia: The First Woman Apostle (Fortress, 2005)",
+"publisher": "Print reference",
+"url": ""
+},
+{
+"id": "A-S18",
+"category": "Ancient History",
+"why": "University New Testament historian’s teaching transcript.",
+"consulted": "Selected transcript sections on cities, households, social hierarchy and imperial setting.",
+"supports": "Greco-Roman context, household hierarchy and public institutions.",
+"title": "Dale B. Martin: Lecture 3: The Greco-Roman World",
+"publisher": "Open Yale Courses, RLST 152",
+"url": "https://oyc.yale.edu/religious-studies/rlst-152/lecture-3"
+},
+{
+"id": "A-S19",
+"category": "Ancient History",
+"why": "University Hebrew Bible scholar’s comparative-law lecture.",
+"consulted": "Selected full transcript sections on biblical and ancient Near Eastern legal collections.",
+"supports": "Legal collections versus modern codes, comparison method and divine-authority framing.",
+"title": "Christine Hayes: Lecture 10: Biblical Law",
+"publisher": "Open Yale Courses, RLST 145",
+"url": "https://oyc.yale.edu/religious-studies/rlst-145/lecture-10"
+},
+{
+"id": "L-S16",
+"category": "Ancient History",
+"why": "Signed specialist reference article with bibliography and line-specific discussion of the inscription.",
+"consulted": "Full article.",
+"supports": "Cylinder’s Marduk-centered rhetoric, restoration claims, and character as a Mesopotamian building inscription.",
+"title": "Muhammad A. Dandamayev: Cyrus iv. The Cyrus Cylinder",
+"publisher": "Encyclopaedia Iranica",
+"url": "https://www.iranicaonline.org/articles/cyrus-iv/"
+},
+{
+"id": "L-S17",
+"category": "Ancient History",
+"why": "Museum scholarly essay discussing published cuneiform archives and the limits of biblical and archaeological evidence.",
+"consulted": "Relevant full essay sections on the return and Murashu archive.",
+"supports": "Judean-type names and varied economic roles in Persian-period Babylonian business records; these documents are later than the initial deportations.",
+"title": "The Metropolitan Museum of Art: Cyrus and the Judean Diaspora",
+"publisher": "The Metropolitan Museum of Art",
+"url": "https://www.metmuseum.org/perspectives/cyrus-and-the-judean-diaspora"
+},
+{
+"id": "L-S22",
+"category": "Ancient History",
+"why": "Specialist educational presentation of an identifiable primary inscription, with explicit limits of surviving evidence; cross-checked with holding museum.",
+"consulted": "Full contextual description and explanation of missing chronicle years.",
+"supports": "Surviving account of 597 capture, absence of surviving Chronicle coverage for final Jerusalem destruction.",
+"title": "Center for Online Judaic Studies: The Babylonian Chronicle (Chronicle 5): Nebuchadnezzar Besieges Jerusalem, 597 BCE",
+"publisher": "Center for Online Judaic Studies",
+"url": "https://cojs.org/the_babylonian_chronicle_-chronicle_5-_nebuchadnezzar_besieges_jerusalem-_597_bce/"
+},
+{
+"id": "N-S20",
+"category": "Ancient History",
+"why": "University-hosted primary epigraphic text with edition, restorations and bibliography.",
+"consulted": "Complete short Greek inscription page and editorial date read.",
+"supports": "Inscription dated AD 52 names Gallio as proconsul; it does not mention Paul.",
+"title": "Claudius; Greek text after A. Plassart: Epistula Claudii ad Delphos",
+"publisher": "Roman Law Library, Université Grenoble Alpes",
+"url": "https://droitromain.univ-grenoble-alpes.fr/Constitutiones/Delphorum1.gr.html"
+},
+{
+"id": "N-S21",
+"category": "Ancient History",
+"why": "Scholarly teaching edition provides Greek, translation, reconstructed letters and references to epigraphic editions.",
+"consulted": "Full text, translation, description and discussion questions read.",
+"supports": "Readably separates surviving/reconstructed inscription and explains relevance to Acts 18; not used for a current museum-location claim.",
+"title": "K. C. Hanson: The Gallio Inscription",
+"publisher": "K. C. Hanson Collection of Ancient Documents",
+"url": "https://kchanson.com/ANCDOCS/greek/gallio.html"
+},
+{
+"id": "N-S22",
+"category": "Ancient History",
+"why": "Article author biography identifies Professor of Christian Origins at Edinburgh and publications on Pilate and Caiaphas.",
+"consulted": "Full substantive article returned in search-index body; direct fetch returned 403.",
+"supports": "Herodians likely supported Herodian rule; precise group organization uncertain; Antipas jurisdiction informs narrative politics.",
+"title": "Helen K. Bond: Herodians",
+"publisher": "Bible Odyssey / Society of Biblical Literature",
+"url": "https://www.bibleodyssey.org/people/main-articles/herodians/"
+},
+{
+"id": "E-S42",
+"category": "Ancient History",
+"why": "Academic model of travel time and cost across the Roman empire by road, river, and sea, with seasonal variation.",
+"consulted": "Route calculations between Pauline sites.",
+"supports": "Travel entry.",
+"title": "ORBIS: The Stanford Geospatial Network Model of the Roman World",
+"publisher": "Stanford University",
+"url": "https://orbis.stanford.edu/"
+},
+{
+"id": "A-S01",
+"category": "Archaeology",
+"why": "Museum exhibition record prepared with the custodial archaeology institutions.",
+"consulted": "Exhibition description, artifact caption, dates and interpretive qualifications.",
+"supports": "Dynastic reading, ninth-century dating, 1993-1994 discovery, probable rather than named Hazael.",
+"title": "The Jewish Museum, in collaboration with Israel Museum archaeology curators: Tel Dan Stele",
+"publisher": "The Jewish Museum",
+"url": "https://thejewishmuseum.org/exhibitions/tel-dan-stele/"
+},
+{
+"id": "A-S02",
+"category": "Archaeology",
+"why": "Custodial museum catalog with object history and specialist bibliography.",
+"consulted": "Catalog record and bibliography; cited bibliography not represented as read.",
+"supports": "Object identity, Moabite context, dating, damaged and reconstructed inscription.",
+"title": "Département des Antiquités orientales: Stèle de Mesha",
+"publisher": "Musée du Louvre",
+"url": "https://collections.louvre.fr/en/ark:/53355/cl010120339"
+},
+{
+"id": "A-S03",
+"category": "Archaeology",
+"why": "Custodial catalog documents physical features and excavation provenance.",
+"consulted": "Indexed museum catalog text, including description, dates and provenance; direct fetch returned 403.",
+"supports": "Prisoner procession, trees, palace room, gypsum, approximate production dates.",
+"title": "British Museum curatorial staff: Lachish relief: wall panel 124908",
+"publisher": "British Museum",
+"url": "https://www.britishmuseum.org/collection/object/W_1856-0909-14_5"
+},
+{
+"id": "A-S04",
+"category": "Archaeology",
+"why": "Custodial artifact catalog.",
+"consulted": "Indexed full catalog description; direct fetch returned 403.",
+"supports": "Production in 691 BCE, 701 campaign and Hezekiah tribute; royal-record form.",
+"title": "British Museum curatorial staff: The Taylor Prism / Sennacherib Prism, 91032",
+"publisher": "British Museum",
+"url": "https://www.britishmuseum.org/collection/object/W_1855-1003-1"
+},
+{
+"id": "A-S05",
+"category": "Archaeology",
+"why": "Custodial catalog gives inscription summary, provenance, date and interpretation cautions.",
+"consulted": "Indexed catalog description and curator commentary; direct fetch returned 403.",
+"supports": "Babylonian royal rhetoric, Marduk, restoration policies, Rassam discovery and human-rights anachronism.",
+"title": "British Museum curatorial staff: The Cyrus Cylinder, 90920",
+"publisher": "British Museum",
+"url": "https://www.britishmuseum.org/collection/object/W_1880-0617-1941"
+},
+{
+"id": "A-S06",
+"category": "Archaeology",
+"why": "Museum connected with the Italian expedition and its finds.",
+"consulted": "Indexed catalog and expedition-history descriptions; direct catalog fetch blocked. Catalog discovery-date inconsistency flagged.",
+"supports": "Frova expedition, reused theater stone, dedication to Tiberius, uncertain building.",
+"title": "Civico Museo Archeologico di Milano: Epigrafe di Ponzio Pilato; Cesarea Marittima, gli scavi di Antonio Frova",
+"publisher": "Comune di Milano",
+"url": "https://www.museoarcheologicomilano.it/le-collezioni-del-museo/cesarea-marittima/epigrafe-di-ponzio-pilato"
+},
+{
+"id": "A-S07",
+"category": "Archaeology",
+"why": "Named New Testament scholar publishing a site-specific analysis with scholarly references.",
+"consulted": "Article preview and bibliographic notes; subscriber article not claimed as fully read.",
+"supports": "Bethesda identification and the need to assess the pool complex and five porticoes.",
+"title": "Urban C. von Wahlde: The Puzzling Pool of Bethesda",
+"publisher": "Biblical Archaeology Review / BAS Library",
+"url": "https://library.biblicalarchaeology.org/article/the-puzzling-pool-of-bethesda/"
+},
+{
+"id": "A-S08",
+"category": "Archaeology",
+"why": "Archaeological publication identifies the IAA researcher and competing site interpretations.",
+"consulted": "Public article.",
+"supports": "Reich/Shukron 2004-2005 excavations and current challenge to Birkat el-Hamra identification.",
+"title": "Nathan Steinmeyer, reporting Nahshon Szanton’s reassessment: Rethinking the Pool of Siloam",
+"publisher": "Biblical Archaeology Society",
+"url": "https://www.biblicalarchaeology.org/daily/ancient-cultures/ancient-israel/rethinking-the-pool-of-siloam/"
+},
+{
+"id": "A-S10",
+"category": "Archaeology",
+"why": "Peer-reviewed epigraphic imaging reassessment by the artifact research team.",
+"consulted": "Abstract and bibliographic record only.",
+"supports": "Late preexilic dating, imaging improvements, blessing parallels and amuletic function.",
+"title": "Gabriel Barkay, Marilyn J. Lundberg, Andrew G. Vaughn, Bruce Zuckerman: The Amulets from Ketef Hinnom: A New Edition and Evaluation",
+"publisher": "Bulletin of the American Schools of Oriental Research 334 (2004)",
+"url": "https://www.journals.uchicago.edu/doi/10.2307/4150106"
+},
+{
+"id": "A-S11",
+"category": "Archaeology",
+"why": "Peer-reviewed alternative by a university archaeologist; used to identify disagreement, not substitute for the full argument.",
+"consulted": "Full public abstract and bibliographic record, not full paper.",
+"supports": "Published early Second Temple alternative dating and reconstruction.",
+"title": "Nadav Na’aman: A New Appraisal of the Silver Amulets from Ketef Hinnom",
+"publisher": "Israel Exploration Journal 61 (2011); Tel Aviv University research record",
+"url": "https://cris.tau.ac.il/en/publications/a-new-appraisal-of-the-silver-amulets-from-ketef-hinnom/"
+},
+{
+"id": "A-S12",
+"category": "Archaeology",
+"why": "Direct institutional announcement identifies expedition staff, context and publication; interpretive promotional claims are separately assessed.",
+"consulted": "Full university release.",
+"supports": "2009 Ophel find, 2015 announcement, inscription, reverse impressions; speculative imagery-to-illness link rejected.",
+"title": "Dov Smith, Hebrew University of Jerusalem: First seal impression of an Israelite or Judean king ever exposed in situ in a scientific archaeological excavation",
+"publisher": "Hebrew University release hosted by Phys.org",
+"url": "https://phys.org/news/2015-12-israelite-judean-king-exposed-situ.html"
+},
+{
+"id": "A-S13",
+"category": "Archaeology",
+"why": "Primary peer-reviewed radiocarbon study distinguishes sample types and chronological inference.",
+"consulted": "Abstract and research record; full PDF retrieval failed.",
+"supports": "Late seventeenth/sixteenth-century BCE destruction dating and sample methodology.",
+"title": "Hendrik J. Bruins and Johannes van der Plicht: Tell Es-Sultan (Jericho): Radiocarbon Results of Short-Lived Cereal and Multiyear Charcoal Samples from the End of the Middle Bronze Age Radiocarbon / Cambridge University Press",
+"publisher": "archarcoal-samples-from-the-end-of-the-middle-bronze-age/49BF732173E7890A2B0EC1B21CB6A817",
+"url": "https://www.cambridge.org/core/journals/radiocarbon/article/tell-essultan-jericho-radiocarbon-results-of-shortlived-cereal-and-multiye"
+},
+{
+"id": "A-S14",
+"category": "Archaeology",
+"why": "Peer-reviewed minority reassessment; cited only to document its proposed alternative, not as consensus.",
+"consulted": "Indexed article excerpts; direct fetch failed.",
+"supports": "Alternative argument for approximately 1400 BCE destruction, explicitly distinguished from radiocarbon conclusion.",
+"title": "Article author identified in publication; full byline requires release verification: The Bronze Age Destruction of Jericho, Archaeology, and the Book of Joshua",
+"publisher": "Religions 14 (2023), 796",
+"url": "https://www.mdpi.com/2077-1444/14/6/796"
+},
+{
+"id": "A-S15",
+"category": "Archaeology",
+"why": "Research by the site’s excavators, indexed by their university.",
+"consulted": "University publication record and indexed abstract.",
+"supports": "Complexity of Jerusalem water-system phases; further survey data needed for precise reconstruction.",
+"title": "Ronny Reich and Eli Shukron: The History of the Gihon Spring in Jerusalem",
+"publisher": "Levant; University of Haifa research record",
+"url": "https://cris.haifa.ac.il/en/publications/the-history-of-the-gihdot-belowon-spring-in-jerusalem/"
+},
+{
+"id": "A-S16",
+"category": "Archaeology",
+"why": "Primary excavation publication preserved by a university library.",
+"consulted": "Selected digitized page and publication record; whole book not claimed as read.",
+"supports": "Merneptah stele discovery context and original publication.",
+"title": "W. M. Flinders Petrie; Wilhelm Spiegelberg, contributor: Six Temples at Thebes: 1896",
+"publisher": "1897 excavation publication; Heidelberg University digital library",
+"url": "https://digi.ub.uni-heidelberg.de/diglit/petrie1897/0015"
+},
+{
+"id": "L-S13",
+"category": "Archaeology",
+"why": "Holding museum’s object-image description, a direct curatorial source for the relief’s visible content.",
+"consulted": "Indexed museum description; direct object endpoint returned access error.",
+"supports": "Relief depicts enthroned Sennacherib, prisoners, execution, and inscription; not a neutral account of the entire campaign.",
+"title": "British Museum: Image 325383001: Sennacherib watches the capture of Lachish",
+"publisher": "British Museum",
+"url": "https://www.britishmuseum.org/collection/image/325383001"
+},
+{
+"id": "L-S14",
+"category": "Archaeology",
+"why": "Holding museum’s catalogue with object identity, dated content, and curatorial note.",
+"consulted": "Substantive indexed catalogue text including curator’s description.",
+"supports": "Chronicle covers 605-594 BCE and reports Nebuchadnezzar’s capture of Jerusalem in 597 BCE.",
+"title": "British Museum: Tablet 21946: Babylonian Chronicle",
+"publisher": "British Museum",
+"url": "https://www.britishmuseum.org/collection/object/W_1896-0409-51"
+},
+{
+"id": "L-S15",
+"category": "Archaeology",
+"why": "Museum exhibition research with identifiable objects and curatorial explanations.",
+"consulted": "Full overview and relevant object descriptions.",
+"supports": "Cyrus captures Babylon in 539 BCE; cylinder found at Babylon in 1879; does not name Judeans; religious-restoration context rather than a modern human-rights charter.",
+"title": "The Metropolitan Museum of Art: The Cyrus Cylinder and Ancient Persia: Charting a New Empire",
+"publisher": "The Metropolitan Museum of Art",
+"url": "https://www.metmuseum.org/exhibitions/listings/2013/cyrus-cylinder"
+},
+{
+"id": "L-S21",
+"category": "Archaeology",
+"why": "Signed research essay by a biblical scholar, with iconographic examples and linked publications; advocates one reading while surveying competitors.",
+"consulted": "Full article sections comparing winged human and composite-creature proposals.",
+"supports": "Exodus does not provide a complete cherub anatomy; winged-child imagery is later; competing iconographic reconstructions exist.",
+"title": "Raanan Eichler: What Kind of Creatures Are the Cherubim?",
+"publisher": "TheTorah.com",
+"url": "https://www.thetorah.com/article/what-kind-of-creatures-are-the-cherubim"
+},
+{
+"id": "L-S24",
+"category": "Archaeology",
+"why": "Excavation team’s own project report, naming directors Shua Kisilevitz and Oded Lipschits and distinguishing research aims from findings.",
+"consulted": "Project overview and site description.",
+"supports": "Excavated Iron Age temple complex near Jerusalem; archaeological comparison cannot directly recover Solomon’s Temple.",
+"title": "Tel Moza Excavations Project: Tel Moza: The Site and Excavation Project",
+"publisher": "Tel Aviv University / Israel Antiquities Authority project",
+"url": "https://www.telmoza.org/"
+},
+{
+"id": "N-S19",
+"category": "Archaeology",
+"why": "Official heritage assessment describing surviving urban fabric and successive periods. It distinguishes Roman city remains from later Christian buildings.",
+"consulted": "Description, statement of significance and authenticity sections opened.",
+"supports": "Philippi on Via Egnatia; Roman colonial setting; extant basilicas belong to later Christian city and cannot be shown as Paul-era churches.",
+"title": "UNESCO World Heritage Centre: Archaeological Site of Philippi",
+"publisher": "UNESCO",
+"url": "https://whc.unesco.org/en/list/1517"
+},
+{
+"id": "E-S05",
+"category": "Archaeology",
+"why": "Institutional catalog records with dates, provenance, and translations for the Assyrian and Babylonian inscriptions that anchor the kings timeline.",
+"consulted": "Object records and curatorial summaries.",
+"supports": "External synchronisms for Ahab, Jehu, Cyrus, and the 597 BCE capture.",
+"title": "British Museum collection online: Kurkh Monolith, Black Obelisk, Cyrus Cylinder, Babylonian Chronicle",
+"publisher": "The British Museum",
+"url": "https://www.britishmuseum.org/collection"
+},
+{
+"id": "E-S13",
+"category": "Archaeology",
+"why": "Museum records for the two surviving Greek warning stones from Herod’s temple barrier; the complete stone was found by Charles Clermont-Ganneau in 1871 and the fragment by J. H. Iliffe in 1936.",
+"consulted": "Object records and published transcriptions.",
+"supports": "The barrier Josephus describes; background to Ephesians 2:14 and Acts 21.",
+"title": "Temple warning inscription (soreg): Istanbul Archaeological Museums (1871 find) and Israel Museum (1936 fragment)",
+"publisher": "Istanbul Archaeological Museums; The Israel Museum, Jerusalem",
+"url": "https://www.imj.org.il/en/collections"
+},
+{
+"id": "E-S14",
+"category": "Archaeology",
+"why": "Popular but editorially reviewed reporting on excavations (Magdala, Herodium, praetorium debate, ossuaries, first-century tombs) with references to primary publications; use for orientation and follow the cited excavation reports for release-level claims.",
+"consulted": "Articles on the praetorium location, Magdala synagogue and stone, Herodium tomb, the Alexander son of Simon ossuary, and rolling-stone tombs.",
+"supports": "Jerusalem in Jesus’s day; Galilee synagogues; Herod’s projects; Passion minor characters; tomb types.",
+"title": "Biblical Archaeology Society, Bible History Daily and BAR articles",
+"publisher": "Biblical Archaeology Society",
+"url": "https://www.biblicalarchaeology.org/"
+},
+{
+"id": "E-S17",
+"category": "Archaeology",
+"why": "Institutional records for the coin types named in the Gospels, with weights and dates.",
+"consulted": "Object records.",
+"supports": "Money and measures conversions.",
+"title": "Museum coin records: Tyrian shekel, Roman denarius, Judean lepton (British Museum; Israel Museum)",
+"publisher": "The British Museum; The Israel Museum",
+"url": "https://www.britishmuseum.org/collection"
+},
+{
+"id": "E-S31",
+"category": "Archaeology",
+"why": "Museum site for the first-century boat excavated in 1986; dimensions, dating, and conservation.",
+"consulted": "Museum description; IAA excavation summary.",
+"supports": "Galilee fishing entry.",
+"title": "Yigal Allon Center, Ginosar: the Ancient Galilee Boat",
+"publisher": "Yigal Allon Center / Israel Antiquities Authority",
+"url": "https://www.jesusboat.com/"
+},
+{
+"id": "E-S33",
+"category": "Archaeology",
+"why": "Eighth-century BCE Aramaic plaster text naming Balaam son of Beor; independent attestation of the seer’s fame.",
+"consulted": "Published transcription and translation.",
+"supports": "Balaam entry.",
+"title": "Deir Alla inscription (Balaam text)",
+"publisher": "Jordan Archaeological Museum, Amman; scholarly editions (Hoftijzer and van der Kooij, 1976)",
+"url": ""
+},
+{
+"id": "E-S34",
+"category": "Archaeology",
+"why": "Late Bronze Midianite shrine find of a copper serpent with gilded head, a regional parallel to Numbers 21.",
+"consulted": "Object record.",
+"supports": "Nehushtan entry.",
+"title": "Timna copper serpent (Israel Museum)",
+"publisher": "The Israel Museum, Jerusalem",
+"url": "https://www.imj.org.il/en/collections"
+},
+{
+"id": "E-S37",
+"category": "Archaeology",
+"why": "Institutional records for two of the most-cited New Testament-period artifacts.",
+"consulted": "Object records.",
+"supports": "Caiaphas; crucifixion evidence.",
+"title": "Israel Museum collection records: Caiaphas ossuary; Yehohanan heel bone",
+"publisher": "The Israel Museum, Jerusalem",
+"url": "https://www.imj.org.il/en/collections"
+},
+{
+"id": "E-S38",
+"category": "Archaeology",
+"why": "Excavation report for the 1990 tomb.",
+"consulted": "Report as cited.",
+"supports": "Caiaphas ossuary provenance.",
+"title": "Zvi Greenhut, \"The Caiaphas Tomb in North Talpiyot, Jerusalem,\" Atiqot 21 (1992)",
+"publisher": "Israel Antiquities Authority journal",
+"url": ""
+},
+{
+"id": "E-S39",
+"category": "Archaeology",
+"why": "The corrected analysis of the Yehohanan remains, replacing Haas’s 1970 reconstruction.",
+"consulted": "Article findings.",
+"supports": "Crucifixion entry.",
+"title": "Joseph Zias and Eliezer Sekeles, \"The Crucified Man from Givat ha-Mivtar: A Reappraisal,\" Israel Exploration Journal 35 (1985)",
+"publisher": "Israel Exploration Society",
+"url": ""
+},
+{
+"id": "E-S40",
+"category": "Archaeology",
+"why": "Cuneiform administrative texts naming Yaukin king of Judah; published by Ernst Weidner in Melanges syriens offerts a M. Rene Dussaud (1939).",
+"consulted": "Published translation.",
+"supports": "Jehoiachin entry.",
+"title": "Babylon ration tablets naming Jehoiachin (Vorderasiatisches Museum, Berlin; Weidner 1939)",
+"publisher": "Staatliche Museen zu Berlin",
+"url": "https://www.smb.museum/en/museums-institutions/vorderasiatisches-museum/"
+},
+{
+"id": "E-S41",
+"category": "Archaeology",
+"why": "Official excavation announcements for the 2009 and 2021 Magdala synagogues.",
+"consulted": "Press releases.",
+"supports": "First-century synagogues.",
+"title": "Israel Antiquities Authority press releases: Magdala synagogue excavations",
+"publisher": "Israel Antiquities Authority",
+"url": "https://www.iaa.org.il/"
+},
+{
+"id": "E-S45",
+"category": "Archaeology",
+"why": "Fragmentary imperial letter dated 52 CE naming L. Iunius Gallio as proconsul of Achaia; the anchor for Pauline chronology.",
+"consulted": "Published text and dating.",
+"supports": "Pauline chronology.",
+"title": "Delphi inscription of Claudius naming Gallio (Musee de Delphes)",
+"publisher": "Ecole francaise d’Athenes / Musee de Delphes",
+"url": ""
+},
+{
+"id": "E-S46",
+"category": "Archaeology",
+"why": "Comprehensive catalog of about 900 ossuaries with inscriptions and dating; basis for statements about names and burial practice.",
+"consulted": "Introduction and catalog entries.",
+"supports": "Tomb world entry.",
+"title": "L. Y. Rahmani, A Catalogue of Jewish Ossuaries in the Collections of the State of Israel (IAA, 1994)",
+"publisher": "Israel Antiquities Authority",
+"url": ""
+},
+{
+"id": "L-S18",
+"category": "Atlases and Geography",
+"why": "Signed Egyptological essay with inscriptional and archaeological references; particular site and chronology claims remain proposals to be compared.",
+"consulted": "Article sections on Pi-Ramesses, Qantir, and the named Exodus places.",
+"supports": "Pi-Ramesses identified at Qantir; different Exodus toponyms have different levels of identification; ancient geography requires evidence.",
+"title": "David A. Falk: What We Know about the Egyptian Places Mentioned in Exodus",
+"publisher": "TheTorah.com",
+"url": "https://www.thetorah.com/article/what-we-know-about-the-egyptian-places-mentioned-in-exodus"
+},
+{
+"id": "L-S20",
+"category": "Atlases and Geography",
+"why": "Signed scholarly essay with detailed textual comparison and references to competing compositional models; its reconstruction is explicitly one model.",
+"consulted": "Main itinerary comparison and notes on alternative explanations.",
+"supports": "Differences between itinerary notes and Numbers 33; need to distinguish textual sequence from a reconstructed continuous route.",
+"title": "David Ben-Gad HaCohen: Ironing Out Israel’s Itinerary Through the Transjordan",
+"publisher": "TheTorah.com",
+"url": "https://www.thetorah.com/article/ironing-out-israels-itinerary-through-the-transjordan"
+},
+{
+"id": "E-S12",
+"category": "Atlases and Geography",
+"why": "Repository of public-domain and Creative Commons images, including nineteenth-century plans (for example, Conrad Schick’s temple models and plans); each file carries its own license which must be checked before reuse.",
+"consulted": "Category pages for Tabernacle, Solomon’s Temple, and Herod’s Temple.",
+"supports": "Base diagrams that can be redrawn; license examples for the asset registry.",
+"title": "Wikimedia Commons: public-domain plans of the tabernacle, camp, and Solomon’s temple",
+"publisher": "Wikimedia Foundation",
+"url": "https://commons.wikimedia.org/"
+},
+{
+"id": "E-S15",
+"category": "Atlases and Geography",
+"why": "Free illustrations and maps for teaching; most sets are Creative Commons Attribution-NonCommercial (some NoDerivatives or ShareAlike). Suitable for a noncommercial site; check each set’s license page.",
+"consulted": "Seven churches map set; license statements.",
+"supports": "Reference maps; licensing model for the asset registry.",
+"title": "FreeBibleimages: map sets including the seven churches of Revelation",
+"publisher": "FreeBibleimages (UK charity)",
+"url": "https://www.freebibleimages.org/"
+},
+{
+"id": "E-S16",
+"category": "Atlases and Geography",
+"why": "Free Windows mapping tool for building custom Bible maps; the developer states that maps created with the program may be used without copyright restriction, making it the safest route to original, reusable maps. Verify the current terms before publishing.",
+"consulted": "Software description and license statement.",
+"supports": "Original conquest, kings, journey, and elevation maps.",
+"title": "Bible Mapper (David P. Barrett)",
+"publisher": "Bible Mapper",
+"url": "https://www.biblemapper.com/"
+},
+{
+"id": "E-S18",
+"category": "Atlases and Geography",
+"why": "Reference article summarizing the road’s distance, descent, and Josephus’s description.",
+"consulted": "Article on the road to Jericho.",
+"supports": "Elevation and distance figures for E016.",
+"title": "American Bible Society, Bible Resources: the Jerusalem-Jericho road",
+"publisher": "American Bible Society",
+"url": "https://bibleresources.americanbible.org/"
+},
+{
+"id": "A-S29",
+"category": "Biblical Commentaries",
+"why": "Notes expose translation and text-critical decisions and reference specialist literature; an evangelical interpretation requiring comparison.",
+"consulted": "Verse or passage page, translation comparisons and applicable notes. Secondary works listed in notes were not separately read.",
+"supports": "Local wording, variant or interpretive question at Exodus 34:6; not a claim to have consulted a full commentary.",
+"title": "NET Bible translation and editorial team: NET Bible: Exodus 34:6, translation and notes",
+"publisher": "Biblical Studies Press / Bible.org",
+"url": "https://classic.net.bible.org/verse.php?book=Exo&chapter=34&verse=6"
+},
+{
+"id": "A-S30",
+"category": "Biblical Commentaries",
+"why": "Notes expose translation and text-critical decisions and reference specialist literature; an evangelical interpretation requiring comparison.",
+"consulted": "Verse or passage page, translation comparisons and applicable notes. Secondary works listed in notes were not separately read.",
+"supports": "Local wording, variant or interpretive question at Genesis 2:7; not a claim to have consulted a full commentary.",
+"title": "NET Bible translation and editorial team: NET Bible: Genesis 2:7, translation and notes",
+"publisher": "Biblical Studies Press / Bible.org",
+"url": "https://classic.net.bible.org/verse.php?book=Gen&chapter=2&verse=7"
+},
+{
+"id": "A-S31",
+"category": "Biblical Commentaries",
+"why": "Notes expose translation and text-critical decisions and reference specialist literature; an evangelical interpretation requiring comparison.",
+"consulted": "Verse or passage page, translation comparisons and applicable notes. Secondary works listed in notes were not separately read.",
+"supports": "Local wording, variant or interpretive question at John 3:8; not a claim to have consulted a full commentary.",
+"title": "NET Bible translation and editorial team: NET Bible: John 3:8, translation and notes",
+"publisher": "Biblical Studies Press / Bible.org",
+"url": "https://classic.net.bible.org/verse.php?book=Joh&chapter=3&verse=8"
+},
+{
+"id": "A-S32",
+"category": "Biblical Commentaries",
+"why": "Notes expose translation and text-critical decisions and reference specialist literature; an evangelical interpretation requiring comparison.",
+"consulted": "Verse or passage page, translation comparisons and applicable notes. Secondary works listed in notes were not separately read.",
+"supports": "Local wording, variant or interpretive question at Romans 3:22; not a claim to have consulted a full commentary.",
+"title": "NET Bible translation and editorial team: NET Bible: Romans 3:22, translation and notes",
+"publisher": "Biblical Studies Press / Bible.org",
+"url": "https://classic.net.bible.org/verse.php?book=Rom&chapter=3&verse=22"
+},
+{
+"id": "A-S33",
+"category": "Biblical Commentaries",
+"why": "Notes expose translation and text-critical decisions and reference specialist literature; an evangelical interpretation requiring comparison.",
+"consulted": "Verse or passage page, translation comparisons and applicable notes. Secondary works listed in notes were not separately read.",
+"supports": "Local wording, variant or interpretive question at Romans 8:5; not a claim to have consulted a full commentary.",
+"title": "NET Bible translation and editorial team: NET Bible: Romans 8:5, translation and notes",
+"publisher": "Biblical Studies Press / Bible.org",
+"url": "https://classic.net.bible.org/verse.php?book=Rom&chapter=8&verse=5"
+},
+{
+"id": "A-S34",
+"category": "Biblical Commentaries",
+"why": "Notes expose translation and text-critical decisions and reference specialist literature; an evangelical interpretation requiring comparison.",
+"consulted": "Verse or passage page, translation comparisons and applicable notes. Secondary works listed in notes were not separately read.",
+"supports": "Local wording, variant or interpretive question at John 21:15; not a claim to have consulted a full commentary.",
+"title": "NET Bible translation and editorial team: NET Bible: John 21:15, translation and notes",
+"publisher": "Biblical Studies Press / Bible.org",
+"url": "https://classic.net.bible.org/verse.php?book=Joh&chapter=21&verse=15"
+},
+{
+"id": "A-S35",
+"category": "Biblical Commentaries",
+"why": "Notes expose translation and text-critical decisions and reference specialist literature; an evangelical interpretation requiring comparison.",
+"consulted": "Verse or passage page, translation comparisons and applicable notes. Secondary works listed in notes were not separately read.",
+"supports": "Local wording, variant or interpretive question at Genesis 6:2; not a claim to have consulted a full commentary.",
+"title": "NET Bible translation and editorial team: NET Bible: Genesis 6:2, translation and notes",
+"publisher": "Biblical Studies Press / Bible.org",
+"url": "https://classic.net.bible.org/verse.php?book=Gen&chapter=6&verse=2"
+},
+{
+"id": "A-S36",
+"category": "Biblical Commentaries",
+"why": "Notes expose translation and text-critical decisions and reference specialist literature; an evangelical interpretation requiring comparison.",
+"consulted": "Verse or passage page, translation comparisons and applicable notes. Secondary works listed in notes were not separately read.",
+"supports": "Local wording, variant or interpretive question at Exodus 4:24-26; not a claim to have consulted a full commentary.",
+"title": "NET Bible translation and editorial team: NET Bible: Exodus 4:24-26, translation and notes",
+"publisher": "Biblical Studies Press / Bible.org",
+"url": "https://classic.net.bible.org/verse.php?book=Exo&chapter=4&verse=25"
+},
+{
+"id": "A-S37",
+"category": "Biblical Commentaries",
+"why": "Notes expose translation and text-critical decisions and reference specialist literature; an evangelical interpretation requiring comparison.",
+"consulted": "Verse or passage page, translation comparisons and applicable notes. Secondary works listed in notes were not separately read.",
+"supports": "Local wording, variant or interpretive question at 1 Peter 3:19; not a claim to have consulted a full commentary.",
+"title": "NET Bible translation and editorial team: NET Bible: 1 Peter 3:19, translation and notes",
+"publisher": "Biblical Studies Press / Bible.org",
+"url": "https://classic.net.bible.org/verse.php?book=1Pe&chapter=3&verse=19"
+},
+{
+"id": "A-S38",
+"category": "Biblical Commentaries",
+"why": "Notes expose translation and text-critical decisions and reference specialist literature; an evangelical interpretation requiring comparison.",
+"consulted": "Verse or passage page, translation comparisons and applicable notes. Secondary works listed in notes were not separately read.",
+"supports": "Local wording, variant or interpretive question at 1 Corinthians 15:29; not a claim to have consulted a full commentary.",
+"title": "NET Bible translation and editorial team: NET Bible: 1 Corinthians 15:29, translation and notes",
+"publisher": "Biblical Studies Press / Bible.org",
+"url": "https://classic.net.bible.org/verse.php?book=1Co&chapter=15&verse=29"
+},
+{
+"id": "A-S39",
+"category": "Biblical Commentaries",
+"why": "Notes expose translation and text-critical decisions and reference specialist literature; an evangelical interpretation requiring comparison.",
+"consulted": "Verse or passage page, translation comparisons and applicable notes. Secondary works listed in notes were not separately read.",
+"supports": "Local wording, variant or interpretive question at 1 Corinthians 14:34; not a claim to have consulted a full commentary.",
+"title": "NET Bible translation and editorial team: NET Bible: 1 Corinthians 14:34, translation and notes",
+"publisher": "Biblical Studies Press / Bible.org",
+"url": "https://classic.net.bible.org/verse.php?book=1Co&chapter=14&verse=34"
+},
+{
+"id": "A-S40",
+"category": "Biblical Commentaries",
+"why": "Notes expose translation and text-critical decisions and reference specialist literature; an evangelical interpretation requiring comparison.",
+"consulted": "Verse or passage page, translation comparisons and applicable notes. Secondary works listed in notes were not separately read.",
+"supports": "Local wording, variant or interpretive question at 1 Corinthians 11:2-16; not a claim to have consulted a full commentary.",
+"title": "NET Bible translation and editorial team: NET Bible: 1 Corinthians 11:2-16, translation and notes",
+"publisher": "Biblical Studies Press / Bible.org",
+"url": "https://classic.net.bible.org/verse.php?book=1Co&chapter=11&verse=2"
+},
+{
+"id": "A-S41",
+"category": "Biblical Commentaries",
+"why": "Notes expose translation and text-critical decisions and reference specialist literature; an evangelical interpretation requiring comparison.",
+"consulted": "Verse or passage page, translation comparisons and applicable notes. Secondary works listed in notes were not separately read.",
+"supports": "Local wording, variant or interpretive question at 2 Kings 2:23; not a claim to have consulted a full commentary.",
+"title": "NET Bible translation and editorial team: NET Bible: 2 Kings 2:23, translation and notes",
+"publisher": "Biblical Studies Press / Bible.org",
+"url": "https://classic.net.bible.org/verse.php?book=2Ki&chapter=2&verse=23"
+},
+{
+"id": "N-S01",
+"category": "Biblical Commentaries",
+"why": "USCCB-hosted New American Bible introduction; institutional scholarly editorial work. Its Catholic setting and particular historical judgments are identified rather than treated as neutral proof.",
+"consulted": "Search-index excerpt of introduction; direct fetch returned 403.",
+"supports": "The Roman congregation predates Paul; Claudius and the proposed Chrestus connection, used only as qualified background.",
+"title": "New American Bible editorial contributors: The Letter to the Romans",
+"publisher": "United States Conference of Catholic Bishops",
+"url": "https://bible.usccb.org/bible/romans/0"
+},
+{
+"id": "N-S02",
+"category": "Biblical Commentaries",
+"why": "USCCB-hosted New American Bible introduction; institutional scholarly editorial work. Its Catholic setting and particular historical judgments are identified rather than treated as neutral proof.",
+"consulted": "Full introduction opened.",
+"supports": "Ephesian provenance, approximate mid-50s date, and limits of reconstructing one-sided correspondence.",
+"title": "New American Bible editorial contributors: The First Letter to the Corinthians",
+"publisher": "United States Conference of Catholic Bishops",
+"url": "https://bible.usccb.org/bible/1corinthians/0"
+},
+{
+"id": "N-S03",
+"category": "Biblical Commentaries",
+"why": "USCCB-hosted New American Bible introduction; institutional scholarly editorial work. Its Catholic setting and particular historical judgments are identified rather than treated as neutral proof.",
+"consulted": "Substantial search-index body of introduction, including concluding chronology and unity discussion; direct fetch returned 403.",
+"supports": "Macedonian provenance, mid/late-50s setting, composite-letter and single-letter alternatives.",
+"title": "New American Bible editorial contributors: The Second Letter to the Corinthians",
+"publisher": "United States Conference of Catholic Bishops",
+"url": "https://bible.usccb.org/bible/2corinthians/0"
+},
+{
+"id": "N-S04",
+"category": "Biblical Commentaries",
+"why": "USCCB-hosted New American Bible introduction; institutional scholarly editorial work. Its Catholic setting and particular historical judgments are identified rather than treated as neutral proof.",
+"consulted": "Full introduction opened.",
+"supports": "North/south Galatia alternatives, approximate 48-50 or 54-55 dates, Acts 15 correlation uncertainty.",
+"title": "New American Bible editorial contributors: The Letter to the Galatians",
+"publisher": "United States Conference of Catholic Bishops",
+"url": "https://bible.usccb.org/bible/galatians/0"
+},
+{
+"id": "N-S05",
+"category": "Biblical Commentaries",
+"why": "USCCB-hosted New American Bible introduction; institutional scholarly editorial work. Its Catholic setting and particular historical judgments are identified rather than treated as neutral proof.",
+"consulted": "Full substantive introduction returned in search-index body; direct fetch returned 403.",
+"supports": "Circular destination hypothesis; traditional Roman imprisonment or later Pauline-school authorship; dates are conditional.",
+"title": "New American Bible editorial contributors: The Letter to the Ephesians",
+"publisher": "United States Conference of Catholic Bishops",
+"url": "https://bible.usccb.org/bible/ephesians/0"
+},
+{
+"id": "N-S06",
+"category": "Biblical Commentaries",
+"why": "USCCB-hosted New American Bible introduction; institutional scholarly editorial work. Its Catholic setting and particular historical judgments are identified rather than treated as neutral proof.",
+"consulted": "Substantial introduction body returned by search, including geographical and provenance sections; direct fetch returned 403.",
+"supports": "Roman, Caesarean, and Ephesian imprisonment alternatives, travel considerations and conditional datings.",
+"title": "New American Bible editorial contributors: The Letter to the Philippians",
+"publisher": "United States Conference of Catholic Bishops",
+"url": "https://bible.usccb.org/bible/philippians/0"
+},
+{
+"id": "N-S08",
+"category": "Biblical Commentaries",
+"why": "USCCB-hosted New American Bible introduction; institutional scholarly editorial work. Its Catholic setting and particular historical judgments are identified rather than treated as neutral proof.",
+"consulted": "Full substantive introduction returned in search-index body; direct fetch returned 403.",
+"supports": "Imprisonment provenance possibilities; later Onesimus identification lacks good evidence. Its runaway scenario is not adopted as explicit Scripture.",
+"title": "New American Bible editorial contributors: The Letter to Philemon",
+"publisher": "United States Conference of Catholic Bishops",
+"url": "https://bible.usccb.org/bible/philemon/0"
+},
+{
+"id": "N-S09",
+"category": "Biblical Commentaries",
+"why": "USCCB-hosted New American Bible introduction; institutional scholarly editorial work. Its Catholic setting and particular historical judgments are identified rather than treated as neutral proof.",
+"consulted": "Search-index excerpt of introduction; direct fetch returned 403.",
+"supports": "Corinthian setting correlated with Timothy and Silvanus returning in Acts 18; approximate early-50s date.",
+"title": "New American Bible editorial contributors: The First Letter to the Thessalonians",
+"publisher": "United States Conference of Catholic Bishops",
+"url": "https://bible.usccb.org/bible/1thessalonians/0"
+},
+{
+"id": "N-S11",
+"category": "Biblical Commentaries",
+"why": "USCCB-hosted New American Bible introduction; institutional scholarly editorial work. Its Catholic setting and particular historical judgments are identified rather than treated as neutral proof.",
+"consulted": "Search-index excerpts on competing authorship and date proposals; direct fetch returned 403.",
+"supports": "Traditional 63-67 placement versus later Pauline tradition, possibly early second century. Argument details checked separately against Wallace and Martin.",
+"title": "New American Bible editorial contributors: The First Letter to Timothy",
+"publisher": "United States Conference of Catholic Bishops",
+"url": "https://bible.usccb.org/bible/1timothy/0"
+},
+{
+"id": "N-S13",
+"category": "Biblical Commentaries",
+"why": "USCCB-hosted New American Bible introduction; institutional scholarly editorial work. Its Catholic setting and particular historical judgments are identified rather than treated as neutral proof.",
+"consulted": "Search-index excerpt of introduction; direct fetch returned 403.",
+"supports": "Relation to Pastoral Epistles and conditional placement after 1 Timothy before 2 Timothy.",
+"title": "New American Bible editorial contributors: The Letter to Titus",
+"publisher": "United States Conference of Catholic Bishops",
+"url": "https://bible.usccb.org/bible/titus/0"
+},
+{
+"id": "N-S14",
+"category": "Biblical Commentaries",
+"why": "USCCB-hosted New American Bible introduction; institutional scholarly editorial work. Its Catholic setting and particular historical judgments are identified rather than treated as neutral proof.",
+"consulted": "Search-index excerpt of introduction; direct fetch returned 403.",
+"supports": "Personal testamentary tone and authorship/date relationship to Pastoral Epistles.",
+"title": "New American Bible editorial contributors: The Second Letter to Timothy",
+"publisher": "United States Conference of Catholic Bishops",
+"url": "https://bible.usccb.org/bible/2timothy/0"
+},
+{
+"id": "N-S23",
+"category": "Biblical Commentaries",
+"why": "Scholarly translation apparatus distinguishes notes and translation; its royal-priest reading is an interpretation to compare with Hebrews.",
+"consulted": "Verse and study-note excerpt read.",
+"supports": "Melchizedek as royal priest; genealogy absent from Genesis; claims identifying him as Shem or Christ not established by Genesis.",
+"title": "NET Bible translators and editors: Genesis 14:18 translation and study notes",
+"publisher": "Biblical Studies Press, via Bible Gateway",
+"url": "https://www.biblegateway.com/passage/?search=Genesis+14%3A18&version=NET"
+},
+{
+"id": "N-S24",
+"category": "Biblical Commentaries",
+"why": "Scholarly notes identify calendrical and translation decisions; their John/Synoptic chronology judgment is one interpretive option.",
+"consulted": "Verse and complete displayed notes opened.",
+"supports": "Preparation-day interpretation and approximate sixth-hour wording; distinction between scriptural statements and proposed Passover symbolism.",
+"title": "NET Bible translators and editors: John 19:14 translation and study notes",
+"publisher": "Biblical Studies Press, via Bible Gateway",
+"url": "https://www.biblegateway.com/passage/?search=John+19%3A14&version=NET"
+},
+{
+"id": "N-S25",
+"category": "Biblical Commentaries",
+"why": "USCCB-hosted New American Bible introduction; institutional scholarly editorial work. Its Catholic setting and particular historical judgments are identified rather than treated as neutral proof.",
+"consulted": "Full introduction opened.",
+"supports": "Strong literary relationship to 2 Peter; widespread Jude-first view. Claimed gnostic identification and confident reconstruction of lost Moses text are not adopted.",
+"title": "New American Bible editorial contributors: The Letter of Jude",
+"publisher": "United States Conference of Catholic Bishops",
+"url": "https://bible.usccb.org/bible/jude/0"
+},
+{
+"id": "E-S19",
+"category": "Biblical Commentaries",
+"why": "Standard evangelical catalog of biblical predictions with counts; used only for its totals and method, which readers cite in conflicting ways.",
+"consulted": "Summary tables as cited in secondary literature; the volume itself should be checked before release.",
+"supports": "Honest counting of messianic prophecies.",
+"title": "J. Barton Payne, Encyclopedia of Biblical Prophecy (Harper & Row, 1973)",
+"publisher": "Print reference",
+"url": ""
+},
+{
+"id": "E-S23",
+"category": "Biblical Commentaries",
+"why": "Popular-level but sourced essays on Jewish context; used for orientation on the third-day tradition and checked against Genesis Rabbah directly.",
+"consulted": "Essay on resurrection on the third day.",
+"supports": "Third-day pattern.",
+"title": "Lois Tverberg, Our Rabbi Jesus: essays on Jewish background",
+"publisher": "Our Rabbi Jesus / En-Gedi Resource Center",
+"url": "https://ourrabbijesus.com/"
+},
+{
+"id": "E-S28",
+"category": "Biblical Commentaries",
+"why": "Influential cultural readings of the parables, including the kezazah claim; cited so the claim can be traced to its source and evaluated.",
+"consulted": "Chapters on Luke 15.",
+"supports": "Prodigal Son background (with caveats).",
+"title": "Kenneth E. Bailey, Jesus Through Middle Eastern Eyes (IVP Academic, 2008)",
+"publisher": "Print reference",
+"url": ""
+},
+{
+"id": "E-S35",
+"category": "Biblical Commentaries",
+"why": "Freely available translator notes that document textual and grammatical options.",
+"consulted": "Notes on the passages named.",
+"supports": "Eutychus; Junia; Pauline chronology.",
+"title": "NET Bible translation notes (Acts 20:9; Romans 16:7; Pauline introductions)",
+"publisher": "Bible.org",
+"url": "https://netbible.org/"
+},
+{
+"id": "A-S43",
+"category": "Early Christian Sources",
+"why": "Ancient witness to early reception and authorship discussion.",
+"consulted": "Section 6.25 on Hebrews and Origen, within book 6.",
+"supports": "Origen’s stylistic assessment and admission that the writer is unknown.",
+"title": "Eusebius of Caesarea, preserving Origen: Church History 6.25",
+"publisher": "New Advent, public-domain patristic translation",
+"url": "https://www.newadvent.org/fathers/250106.htm"
+},
+{
+"id": "A-S44",
+"category": "Early Christian Sources",
+"why": "Early Christian witness explicitly citing the longer ending of Mark.",
+"consulted": "Chapter 3.10, especially its Mark 16:19 citation.",
+"supports": "Early attestation of the longer ending; not proof of Markan composition.",
+"title": "Irenaeus of Lyon: Against Heresies 3.10.5",
+"publisher": "New Advent, public-domain patristic translation",
+"url": "https://www.newadvent.org/fathers/0103310.htm"
+},
+{
+"id": "N-S15",
+"category": "Early Christian Sources",
+"why": "Primary early Christian historiography preserving attributed statements; valuable for reception history, not independent proof of apostolic authorship.",
+"consulted": "Book 6, chapter 25 opened, especially paragraphs 7-14.",
+"supports": "Ancient uncertainty over Hebrews authorship; reception questions about 2 Peter and shorter Johannine letters.",
+"title": "Eusebius of Caesarea, reporting Origen: Church History 6.25.7-14",
+"publisher": "New Advent edition of Nicene and Post-Nicene Fathers translation",
+"url": "https://www.newadvent.org/fathers/250106.htm"
+},
+{
+"id": "E-S24",
+"category": "Early Christian Sources",
+"why": "Second-century Christian reading of Genesis 3:15 and of Mary and Eve; earliest protevangelium interpretation.",
+"consulted": "Book 5, chapter 21; book 3, chapter 22.",
+"supports": "Seed and serpent reception.",
+"title": "Irenaeus, Against Heresies, book 5 (Ante-Nicene Fathers translation)",
+"publisher": "New Advent / CCEL, public domain",
+"url": "https://www.newadvent.org/fathers/0103.htm"
+},
+{
+"id": "E-S25",
+"category": "Early Christian Sources",
+"why": "Second-century record of Jewish-Christian debate over Isaiah 7:14 and the Greek translations.",
+"consulted": "Chapters 43, 67-68, 71-73.",
+"supports": "Almah/parthenos debate history.",
+"title": "Justin Martyr, Dialogue with Trypho (Ante-Nicene Fathers translation)",
+"publisher": "New Advent / CCEL, public domain",
+"url": "https://www.newadvent.org/fathers/0128.htm"
+},
+{
+"id": "E-S26",
+"category": "Early Christian Sources",
+"why": "Augustine’s triangular-number reading of the 153 fish.",
+"consulted": "Tractate 122.",
+"supports": "153 fish proposals.",
+"title": "Augustine, Tractates on the Gospel of John, Tractate 122 (NPNF translation)",
+"publisher": "New Advent, public domain",
+"url": "https://www.newadvent.org/fathers/1701122.htm"
+},
+{
+"id": "A-S17",
+"category": "Early Jewish Sources",
+"why": "Ancient Jewish historical witness; a partisan author whose testimony must be compared, not treated as Scripture.",
+"consulted": "Selected sections on Hellenistic rule, Herodian succession, Quirinius and Jewish groups; not the entire work.",
+"supports": "Ancient descriptions of groups and chronology of Quirinius after Archelaus.",
+"title": "Flavius Josephus; William Whiston, translator: Antiquities of the Jews, selected portions of books 12, 17 and 18",
+"publisher": "Project Gutenberg public-domain edition",
+"url": "https://www.gutenberg.org/files/2848/2848-h/2848-h.htm"
+},
+{
+"id": "E-S01",
+"category": "Early Jewish Sources",
+"why": "Open-access library of Hebrew Bible, rabbinic texts, and medieval commentaries (Rashi, Ibn Ezra, Ramban) with translations; used for primary texts and to check what classical Jewish interpretation actually says.",
+"consulted": "Biblical text, Rashi on Isaiah 53, Genesis Rabbah 56, Midrash Tehillim 1, Bava Batra 14b and 119b, weekly Torah portion calendar.",
+"supports": "Jewish readings of Isaiah 53; third-day traditions; Psalter division; Tanakh order; daughters of Zelophehad in rabbinic law.",
+"title": "Sefaria: Tanakh, Mishnah, Talmud, and classical commentaries",
+"publisher": "Sefaria (nonprofit digital library)",
+"url": "https://www.sefaria.org/"
+},
+{
+"id": "E-S02",
+"category": "Early Jewish Sources",
+"why": "First-century eyewitness description of Herod’s temple, its courts, barrier inscriptions, and curtains; the primary literary source for the temple Jesus knew.",
+"consulted": "Book 5, chapter 5 (temple description).",
+"supports": "Temple Mount layout; soreg; the outer curtain’s cosmic tapestry; Jerusalem’s topography.",
+"title": "Josephus, The Wars of the Jews, book 5 (Whiston translation)",
+"publisher": "Public domain; hosted at Perseus Digital Library (Tufts) and Project Gutenberg",
+"url": "https://www.gutenberg.org/ebooks/2850"
+},
+{
+"id": "E-S03",
+"category": "Early Jewish Sources",
+"why": "Compiled about 200 CE; records temple measurements and rituals as remembered by the rabbis. Later than the New Testament, so used as tradition consistent with earlier hints rather than as first-century reportage.",
+"consulted": "Middot 2:3 (soreg height); Shekalim 8:5 (curtain); Sukkah 4:9-5:4 (water libation and illumination); Yoma 6 (scapegoat); Megillah 3-4 (readings); Eruvin 53b (Galilean speech).",
+"supports": "Temple courts; curtain tradition; Tabernacles rituals behind John 7-9; Day of Atonement practice; Torah reading; Galilean accent.",
+"title": "Mishnah tractates Middot, Shekalim, Sukkah, Yoma, Megillah; Talmud Eruvin (Sefaria)",
+"publisher": "Sefaria",
+"url": "https://www.sefaria.org/texts/Mishnah"
+},
+{
+"id": "E-S04",
+"category": "Early Jewish Sources",
+"why": "Primary source for the high priest’s garments, the tabernacle furniture, Daniel’s reception, the Hasmonean water-libation incident, and Herod’s reign and building.",
+"consulted": "Book 3, chapters 6-7; book 10, chapter 11; book 13, chapter 13; books 15-17.",
+"supports": "Seamless priestly tunic; furniture; Herod’s projects and death; Alexander Jannaeus and the citrons.",
+"title": "Josephus, Antiquities of the Jews, books 3, 10, 13, 15-17 (Whiston translation)",
+"publisher": "Public domain; Project Gutenberg",
+"url": "https://www.gutenberg.org/ebooks/2848"
+},
+{
+"id": "E-S22",
+"category": "Early Jewish Sources",
+"why": "Josephus’s reading of Daniel as pointing to Roman destruction; earliest extended non-biblical interpretation of Daniel.",
+"consulted": "Book 10, chapter 11.",
+"supports": "Reception history of Daniel 9.",
+"title": "Josephus, Antiquities of the Jews, book 10, chapter 11 (Whiston translation)",
+"publisher": "Project Gutenberg",
+"url": "https://www.gutenberg.org/ebooks/2848"
+},
+{
+"id": "E-S32",
+"category": "Early Jewish Sources",
+"why": "Standard early English translation of 1 Enoch; used for the passage Jude quotes and for orientation to the book’s contents.",
+"consulted": "1 Enoch 1:9; overview.",
+"supports": "Enoch entry.",
+"title": "R. H. Charles, translator, The Book of Enoch (1917), public domain",
+"publisher": "Sacred Texts / Wikisource",
+"url": "https://www.sacred-texts.com/bib/boe/"
+},
+{
+"id": "E-S43",
+"category": "Early Jewish Sources",
+"why": "Primary narrative of the Maccabean revolt and temple rededication; canonical for Catholic and Orthodox readers.",
+"consulted": "1 Maccabees 1-4; 2 Maccabees 4-10.",
+"supports": "Intertestamental timeline.",
+"title": "1 and 2 Maccabees (NRSV Apocrypha)",
+"publisher": "Public reference text",
+"url": "https://www.biblegateway.com/"
+},
+{
+"id": "F-S10",
+"category": "Ecumenical Statements",
+"why": "Official ecumenical agreement; records agreed and unresolved formulations rather than one tradition’s proof.",
+"consulted": "Common statement on justification, faith, grace, and good works.",
+"supports": "Areas of Lutheran-Catholic convergence and remaining differences on justification.",
+"title": "Lutheran World Federation and Catholic Church: Joint Declaration on the Doctrine of Justification (2019)",
+"publisher": "Lutheran World Federation",
+"url": "https://lutheranworld.org/sites/default/files/2022-02/joint_declaration_2019_en.pdf"
+},
+{
+"id": "F-S09",
+"category": "Historical Theology",
+"why": "Primary eighteenth-century Methodist sermon in a public-domain archive; used as a historical theological voice.",
+"consulted": "Sermon text on grace, election, and the offer of salvation.",
+"supports": "Wesleyan account of prevenient grace and universal gospel invitation.",
+"title": "John Wesley: Free Grace",
+"publisher": "CCEL / Wesley Center",
+"url": "https://www.ccel.org/ccel/wesley/sermons.viii.ii.html"
+},
+{
+"id": "F-S13",
+"category": "Historical Theology",
+"why": "Historical conciliar text in a public-domain scholarly collection.",
+"consulted": "Definition concerning Christ’s divine and human natures.",
+"supports": "Classical Christological language on one person in two natures.",
+"title": "Council of Chalcedon: Definition of Faith (451)",
+"publisher": "CCEL archive",
+"url": "https://www.ccel.org/ccel/schaff/npnf214.xi.xvii.html"
+},
+{
+"id": "E-S20",
+"category": "Historical Theology",
+"why": "Nineteenth-century list of 456 Old Testament passages applied to the Messiah in rabbinic writings; useful for showing Jewish messianic reading, dated in its scholarship.",
+"consulted": "Appendix IX.",
+"supports": "Prophecy table; Jewish messianic readings.",
+"title": "Alfred Edersheim, The Life and Times of Jesus the Messiah, Appendix IX (1883), public domain",
+"publisher": "Christian Classics Ethereal Library",
+"url": "https://ccel.org/ccel/edersheim/lifetimes"
+},
+{
+"id": "F-S01",
+"category": "Official Christian Statements",
+"why": "Official catechetical exposition of Eastern Orthodox Trinitarian doctrine; useful as a tradition-specific primary statement.",
+"consulted": "Doctrine overview and biblical citations.",
+"supports": "Trinity, divine persons, and the relation of Father, Son, and Spirit.",
+"title": "Orthodox Church in America: The Holy Trinity",
+"publisher": "Orthodox Church in America",
+"url": "https://www.oca.org/orthodoxy/the-orthodox-faith/doctrine/the-holy-trinity"
+},
+{
+"id": "F-S02",
+"category": "Official Christian Statements",
+"why": "Official denominational confession; cited as a Baptist position rather than a neutral scholarly source.",
+"consulted": "Articles on Scripture, God, salvation, church, ordinances, and last things.",
+"supports": "Baptist formulations of Scripture, Trinity, salvation, baptism, communion, church, and mission.",
+"title": "Southern Baptist Convention: The Baptist Faith and Message 2000",
+"publisher": "Southern Baptist Convention",
+"url": "https://bfm.sbc.net/bfm2000/"
+},
+{
+"id": "F-S03",
+"category": "Official Christian Statements",
+"why": "Official Vatican catechism; identifies Roman Catholic teaching and its cited biblical and conciliar sources.",
+"consulted": "Sections on grace, justification, merit, and sanctification.",
+"supports": "Catholic account of grace, justification, human response, and sanctification.",
+"title": "Catholic Church: Catechism of the Catholic Church: Grace and Justification",
+"publisher": "Vatican",
+"url": "https://www.vatican.va/archive/ENG0015/__P6Y.HTM"
+},
+{
+"id": "F-S04",
+"category": "Official Christian Statements",
+"why": "Official Methodist doctrinal standard.",
+"consulted": "Articles on sin, justification, sanctification, baptism, communion, and free will.",
+"supports": "Methodist positions on grace, sanctification, baptism, Eucharist, and Christian life.",
+"title": "The United Methodist Church: Articles of Religion",
+"publisher": "The United Methodist Church",
+"url": "https://www.umc.org/en/content/articles-of-religion"
+},
+{
+"id": "F-S05",
+"category": "Official Christian Statements",
+"why": "Officially hosted historic Reformed confession; used to represent a confessional Reformed position.",
+"consulted": "Chapters on Scripture, providence, effectual calling, perseverance, sacraments, and church.",
+"supports": "Reformed positions on Scripture, election, perseverance, baptism, communion, and providence.",
+"title": "Westminster Assembly: Westminster Confession of Faith",
+"publisher": "Orthodox Presbyterian Church",
+"url": "https://opc.org/wcf.html"
+},
+{
+"id": "F-S06",
+"category": "Official Christian Statements",
+"why": "Official ecumenical council text hosted by the Vatican.",
+"consulted": "Sections on Scripture, tradition, inspiration, and interpretation.",
+"supports": "Catholic teaching on revelation, Scripture, tradition, and responsible interpretation.",
+"title": "Vatican Council II: Dei Verbum: Dogmatic Constitution on Divine Revelation",
+"publisher": "Vatican",
+"url": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19651118_dei-verbum_en.html"
+},
+{
+"id": "F-S08",
+"category": "Official Christian Statements",
+"why": "Official Orthodox liturgical and doctrinal exposition.",
+"consulted": "Feast exposition on Christ’s ascension and glorification.",
+"supports": "Orthodox account of ascension, glorification, and human participation in Christ.",
+"title": "Orthodox Church in America: The Ascension of Christ",
+"publisher": "Orthodox Church in America",
+"url": "https://www.oca.org/orthodoxy/the-orthodox-faith/worship/the-church-year/ascension"
+},
+{
+"id": "F-S11",
+"category": "Official Christian Statements",
+"why": "Primary confessional text hosted by a Lutheran confessional archive.",
+"consulted": "Article IX and related notes.",
+"supports": "Lutheran account of baptism, infant baptism, and the promise attached to the sacrament.",
+"title": "Lutheran Confessions: Augsburg Confession: Of Baptism",
+"publisher": "Book of Concord",
+"url": "https://bookofconcord.org/augsburg-confession/of-baptism/"
+},
+{
+"id": "F-S12",
+"category": "Official Christian Statements",
+"why": "Official Vatican catechism; used for Catholic sacramental teaching.",
+"consulted": "Sections on baptism’s grace, necessity, and infants.",
+"supports": "Catholic account of baptism, original sin, regeneration, and infant baptism.",
+"title": "Catholic Church: Catechism: Baptism",
+"publisher": "Vatican",
+"url": "https://www.vatican.va/archive/ENG0015/__P3E.HTM"
+},
+{
+"id": "F-S15",
+"category": "Official Christian Statements",
+"why": "Official Vatican catechism; represents Roman Catholic Eucharistic doctrine.",
+"consulted": "Sections on Eucharistic presence, sacrifice, and communion.",
+"supports": "Catholic account of the Lord’s Supper and real presence.",
+"title": "Catholic Church: Catechism: The Eucharist",
+"publisher": "Vatican",
+"url": "https://www.vatican.va/archive/ENG0015/__P3W.HTM"
+},
+{
+"id": "F-S16",
+"category": "Official Christian Statements",
+"why": "Primary Lutheran confessional text.",
+"consulted": "Article X and related notes.",
+"supports": "Lutheran account of Christ’s presence in the Lord’s Supper.",
+"title": "Lutheran Confessions: Augsburg Confession: Of the Lord’s Supper",
+"publisher": "Book of Concord",
+"url": "https://bookofconcord.org/augsburg-confession/of-the-lords-supper/"
+},
+{
+"id": "F-S17",
+"category": "Official Christian Statements",
+"why": "Official Orthodox catechetical exposition.",
+"consulted": "Eucharistic theology and liturgical explanation.",
+"supports": "Orthodox account of Eucharist as communion in Christ’s body and blood.",
+"title": "Orthodox Church in America: The Eucharist",
+"publisher": "Orthodox Church in America",
+"url": "https://www.oca.org/orthodoxy/the-orthodox-faith/worship/the-sacraments/eucharist"
+},
+{
+"id": "F-S18",
+"category": "Official Christian Statements",
+"why": "Official Anglican doctrinal text.",
+"consulted": "Articles on Scripture, justification, sacraments, predestination, and church.",
+"supports": "Anglican positions for comparison on Scripture, justification, baptism, and communion.",
+"title": "Church of England: The Thirty-Nine Articles of Religion",
+"publisher": "Church of England",
+"url": "https://www.churchofengland.org/faith/faith-and-leadership/faith-and-order/thirty-nine-articles-religion"
+},
+{
+"id": "L-S01",
+"category": "Online Academic Resources",
+"why": "Primary official statement of Catholic doctrine; used to describe Catholic reception, not as neutral proof of canon history.",
+"consulted": "Full relevant official section, especially paragraph 120.",
+"supports": "Catholic canon count and listed books; Catholic affirmation of the Old Testament’s continuing value.",
+"title": "Catholic Church: Catechism of the Catholic Church, 120-130: The Canon of Scripture",
+"publisher": "Vatican",
+"url": "https://www.vatican.va/content/catechism/en/part_one/section_one/chapter_two/article_3/iv_the_canon_of_scripture.html"
+},
+{
+"id": "L-S02",
+"category": "Online Academic Resources",
+"why": "Primary institutional explanation of its Orthodox canonical practice. Its compressed historical claims are not adopted uncritically.",
+"consulted": "Full question and answer.",
+"supports": "Orthodox reception of a longer Old Testament; examples of additional books.",
+"title": "Orthodox Church in America: Canon of Scripture",
+"publisher": "Orthodox Church in America",
+"url": "https://www.oca.org/questions/scripture/canon-of-scripture"
+},
+{
+"id": "E-S30",
+"category": "Online Academic Resources",
+"why": "Independent essay tracing the kezazah claim to its rabbinic sources and showing the mismatch; useful as a pointer, not an authority; verify against the Jerusalem Talmud passages cited.",
+"consulted": "Essay and its citations.",
+"supports": "Vetting cultural claims.",
+"title": "Sleepless Theology, \"Kezazah and the Prodigal: Debunking a Popular Sermon Illustration\"",
+"publisher": "Substack essay (independent)",
+"url": "https://sleeplesstheology.substack.com/p/kezazah-and-the-prodigal-debunking"
+},
+{
+"id": "L-S23",
+"category": "Original Languages",
+"why": "Signed specialist research comparing biblical usage, ancient versions, lexicons, and material culture; proposed identification is kept distinct from consensus.",
+"consulted": "Full relevant article and tables of traditional/modern interpretations.",
+"supports": "Uncertain furnishing term zer, often rendered molding or rim; competing reconstructions and Egyptian cornice proposal.",
+"title": "Raanan Eichler: The Zer",
+"publisher": "TheTorah.com",
+"url": "https://www.thetorah.com/article/the-zer"
+},
+{
+"id": "A-S20",
+"category": "Second Temple Judaism",
+"why": "Institutional historical introduction to the Second Temple manuscript setting.",
+"consulted": "Historical overview webpage.",
+"supports": "Persian, Hellenistic, Hasmonean and Roman framework.",
+"title": "Israel Antiquities Authority: The Dead Sea Scrolls: Historical Background",
+"publisher": "Leon Levy Dead Sea Scrolls Digital Library",
+"url": "https://www.deadseascrolls.org.il/learn-about-the-scrolls/historical-background?locale=en_US"
+},
+{
+"id": "A-S09",
+"category": "Textual Criticism",
+"why": "Institution responsible for the manuscript archive and its research presentation.",
+"consulted": "Full introductory webpage.",
+"supports": "Qumran manuscript dates, languages, contents, diversity, transmission and qualified Essene association.",
+"title": "Israel Antiquities Authority: The Dead Sea Scrolls: Introduction",
+"publisher": "Leon Levy Dead Sea Scrolls Digital Library",
+"url": "https://www.deadseascrolls.org.il/learn-about-the-scrolls/introduction?locale=en_US"
+},
+{
+"id": "A-S21",
+"category": "Textual Criticism",
+"why": "Notes expose translation and text-critical decisions and reference specialist literature; an evangelical interpretation requiring comparison.",
+"consulted": "Verse or passage page, translation comparisons and applicable notes. Secondary works listed in notes were not separately read.",
+"supports": "Local wording, variant or interpretive question at Luke 2:2; not a claim to have consulted a full commentary.",
+"title": "NET Bible translation and editorial team: NET Bible: Luke 2:2, translation and notes",
+"publisher": "Biblical Studies Press / Bible.org",
+"url": "https://classic.net.bible.org/verse.php?book=Luk&chapter=2&verse=2"
+},
+{
+"id": "A-S22",
+"category": "Textual Criticism",
+"why": "Notes expose translation and text-critical decisions and reference specialist literature; an evangelical interpretation requiring comparison.",
+"consulted": "Verse or passage page, translation comparisons and applicable notes. Secondary works listed in notes were not separately read.",
+"supports": "Local wording, variant or interpretive question at Deuteronomy 32:8; not a claim to have consulted a full commentary.",
+"title": "NET Bible translation and editorial team: NET Bible: Deuteronomy 32:8, translation and notes",
+"publisher": "Biblical Studies Press / Bible.org",
+"url": "https://classic.net.bible.org/verse.php?book=Deu&chapter=32&verse=8"
+},
+{
+"id": "A-S23",
+"category": "Textual Criticism",
+"why": "Notes expose translation and text-critical decisions and reference specialist literature; an evangelical interpretation requiring comparison.",
+"consulted": "Verse or passage page, translation comparisons and applicable notes. Secondary works listed in notes were not separately read.",
+"supports": "Local wording, variant or interpretive question at Mark 16:9-20; not a claim to have consulted a full commentary.",
+"title": "NET Bible translation and editorial team: NET Bible: Mark 16:9-20, translation and notes",
+"publisher": "Biblical Studies Press / Bible.org",
+"url": "https://classic.net.bible.org/verse.php?book=Mar&chapter=16&verse=9"
+},
+{
+"id": "A-S24",
+"category": "Textual Criticism",
+"why": "Notes expose translation and text-critical decisions and reference specialist literature; an evangelical interpretation requiring comparison.",
+"consulted": "Verse or passage page, translation comparisons and applicable notes. Secondary works listed in notes were not separately read.",
+"supports": "Local wording, variant or interpretive question at John 7:53-8:11; not a claim to have consulted a full commentary.",
+"title": "NET Bible translation and editorial team: NET Bible: John 7:53-8:11, translation and notes",
+"publisher": "Biblical Studies Press / Bible.org",
+"url": "https://classic.net.bible.org/verse.php?book=Joh&chapter=7&verse=53"
+},
+{
+"id": "A-S25",
+"category": "Textual Criticism",
+"why": "Notes expose translation and text-critical decisions and reference specialist literature; an evangelical interpretation requiring comparison.",
+"consulted": "Verse or passage page, translation comparisons and applicable notes. Secondary works listed in notes were not separately read.",
+"supports": "Local wording, variant or interpretive question at 1 John 5:7-8; not a claim to have consulted a full commentary.",
+"title": "NET Bible translation and editorial team: NET Bible: 1 John 5:7-8, translation and notes",
+"publisher": "Biblical Studies Press / Bible.org",
+"url": "https://classic.net.bible.org/verse.php?book=1Jo&chapter=5&verse=7"
+},
+{
+"id": "A-S26",
+"category": "Textual Criticism",
+"why": "Notes expose translation and text-critical decisions and reference specialist literature; an evangelical interpretation requiring comparison.",
+"consulted": "Verse or passage page, translation comparisons and applicable notes. Secondary works listed in notes were not separately read.",
+"supports": "Local wording, variant or interpretive question at 1 Samuel 17:4; not a claim to have consulted a full commentary.",
+"title": "NET Bible translation and editorial team: NET Bible: 1 Samuel 17:4, translation and notes",
+"publisher": "Biblical Studies Press / Bible.org",
+"url": "https://classic.net.bible.org/verse.php?book=1Sa&chapter=17&verse=4"
+},
+{
+"id": "A-S27",
+"category": "Textual Criticism",
+"why": "Notes expose translation and text-critical decisions and reference specialist literature; an evangelical interpretation requiring comparison.",
+"consulted": "Verse or passage page, translation comparisons and applicable notes. Secondary works listed in notes were not separately read.",
+"supports": "Local wording, variant or interpretive question at Psalm 22:16; not a claim to have consulted a full commentary.",
+"title": "NET Bible translation and editorial team: NET Bible: Psalm 22:16, translation and notes",
+"publisher": "Biblical Studies Press / Bible.org",
+"url": "https://classic.net.bible.org/verse.php?book=Psa&chapter=22&verse=16"
+},
+{
+"id": "A-S28",
+"category": "Textual Criticism",
+"why": "Notes expose translation and text-critical decisions and reference specialist literature; an evangelical interpretation requiring comparison.",
+"consulted": "Verse or passage page, translation comparisons and applicable notes. Secondary works listed in notes were not separately read.",
+"supports": "Local wording, variant or interpretive question at Hebrews 10:5; not a claim to have consulted a full commentary.",
+"title": "NET Bible translation and editorial team: NET Bible: Hebrews 10:5, translation and notes",
+"publisher": "Biblical Studies Press / Bible.org",
+"url": "https://classic.net.bible.org/verse.php?book=Heb&chapter=10&verse=5"
+},
+{
+"id": "A-S42",
+"category": "Textual Criticism",
+"why": "Notes expose translation and text-critical decisions and reference specialist literature; an evangelical interpretation requiring comparison.",
+"consulted": "Verse or passage page, translation comparisons and applicable notes. Secondary works listed in notes were not separately read.",
+"supports": "Local wording, variant or interpretive question at Revelation 13:18; not a claim to have consulted a full commentary.",
+"title": "NET Bible translation and editorial team: NET Bible: Revelation 13:18, translation and notes",
+"publisher": "Biblical Studies Press / Bible.org",
+"url": "https://classic.net.bible.org/verse.php?book=Rev&chapter=13&verse=18"
+},
+{
+"id": "E-S21",
+"category": "Textual Criticism",
+"why": "High-resolution images and translations of the Great Isaiah Scroll and other Qumran manuscripts; primary evidence for the text of Isaiah 53 and the Psalter’s order about 100 BCE.",
+"consulted": "Isaiah 52-53 images; Psalms scroll description.",
+"supports": "Isaiah 53 text; Psalm 145 nun verse; Psalter fluidity.",
+"title": "The Digital Dead Sea Scrolls (Israel Museum): Great Isaiah Scroll; Psalms scroll",
+"publisher": "The Israel Museum, Jerusalem, with Google",
+"url": "http://dss.collections.imj.org.il/"
+},
+{
+"id": "A-S45",
+"category": "Textual and Literary Studies",
+"why": "Public translation notes with editorial references; useful for comparison when paired with the Gospel texts and other scholarship.",
+"consulted": "NET notes and parallel Gospel wording as a starting point for the Synoptic comparison.",
+"supports": "Parallel wording, translation decisions, and questions for comparing Matthew, Mark, and Luke.",
+"title": "Bible.org NET Bible editorial team: NET Bible Notes: Synoptic Gospel Passages",
+"publisher": "Bible.org",
+"url": "https://netbible.org/bible/Matthew+1"
+},
+{
+"id": "E-S44",
+"category": "Textual and Literary Studies",
+"why": "The standard demonstration of the flood narrative’s palistrophic structure.",
+"consulted": "Article as widely reproduced in commentaries.",
+"supports": "Chiasm entry.",
+"title": "Gordon J. Wenham, \"The Coherence of the Flood Narrative,\" Vetus Testamentum 28 (1978)",
+"publisher": "Peer-reviewed journal",
+"url": ""
+},
+{
+"id": "F-S14",
+"category": "Translation and Language",
+"why": "Public translation notes with cited textual and linguistic rationale; note the translation’s editorial perspective.",
+"consulted": "Notes on anōthen, pneuma, and the new-birth discourse.",
+"supports": "Controlled examples of translation ambiguity and semantic context.",
+"title": "NET Bible editorial team: NET Bible Notes: John 3:3",
+"publisher": "Bible.org",
+"url": "https://netbible.org/bible/John+3"
+},
+{
+"id": "F-S19",
+"category": "Translation and Language",
+"why": "Public research tool providing linked original-language and translation resources; use as a tool, not as an authority independent of its underlying editions.",
+"consulted": "Text comparison and lexical lookup method.",
+"supports": "Transparent comparison of translations, morphology, and lexical context.",
+"title": "STEP Bible: STEP Bible Text and Lexicon Tools",
+"publisher": "Tyndale House / STEP Bible",
+"url": "https://www.stepbible.org/"
+}
+]
+}
