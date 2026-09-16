@@ -4,6 +4,7 @@ import { TOOLS, newContext, runTool, seedContext, grounding, openedRef } from '.
 import { verifyAnswer } from '../../../lib/tutor/verify.js';
 export const runtime='nodejs'; export const maxDuration=120;
 const MODEL=process.env.OPENAI_MODEL||'gpt-5';
+const EFFORT=process.env.OPENAI_REASONING||'low';
 const SEP='';
 const SYSTEM=`You are the tutor inside Emmaus, a Bible study site whose rule is: read the passage first, grade the claim, show the caveat. Readers ask about passages, doctrine, ethics, people, places, history, how to read, and where to find things on the site.
 
@@ -39,7 +40,7 @@ export async function POST(req){
     try{
       send(ctrl,grounding(ctx));
       for(let round=0;round<6;round++){
-        const stream=await client.responses.create({ model:MODEL, instructions, input, tools:TOOLS, tool_choice:round<5?'auto':'none', previous_response_id:prev, stream:true });
+        const stream=await client.responses.create({ model:MODEL, instructions, input, tools:TOOLS, tool_choice:round<5?'auto':'none', previous_response_id:prev, reasoning:{ effort:EFFORT }, stream:true });
         const calls=[];
         for await (const ev of stream){
           if(ev.type==='response.output_text.delta'){ answer+=ev.delta; ctrl.enqueue(enc.encode(ev.delta)); }
@@ -47,8 +48,10 @@ export async function POST(req){
           else if(ev.type==='response.completed') prev=ev.response.id;
         }
         if(!calls.length) break;
-        const outputs=[];
-        for(const c of calls){ let args={}; try{ args=JSON.parse(c.arguments||'{}'); }catch(e){} send(ctrl,{ type:'status', text:c.name==='get_passage'?`Reading ${args.reference||''}`:c.name==='search_verses'?`Searching for “${args.query||''}”`:c.name==='lookup_entity'?`Looking up ${args.name||''}`:c.name==='cross_references'?`Following cross references for ${args.reference||''}`:c.name==='book_introduction'?`Reading the introduction to ${args.book||''}`:'Searching Emmaus' }); const out=await runTool(ctx,c.name,args); outputs.push({ type:'function_call_output', call_id:c.call_id, output:String(out).slice(0,12000) }); }
+        const parsed=calls.map(c=>{ let args={}; try{ args=JSON.parse(c.arguments||'{}'); }catch(e){} return { c, args }; });
+        send(ctrl,{ type:'status', text:parsed.map(({ c, args })=>c.name==='get_passage'?`Reading ${args.reference||''}`:c.name==='search_verses'?`Searching for “${args.query||''}”`:c.name==='lookup_entity'?`Looking up ${args.name||''}`:c.name==='cross_references'?`Following cross references for ${args.reference||''}`:c.name==='book_introduction'?`Reading the introduction to ${args.book||''}`:'Searching Emmaus').join(' · ') });
+        const results=await Promise.all(parsed.map(({ c, args })=>runTool(ctx,c.name,args)));
+        const outputs=parsed.map(({ c },i)=>({ type:'function_call_output', call_id:c.call_id, output:String(results[i]).slice(0,12000) }));
         send(ctrl,grounding(ctx)); input=outputs;
       }
     }catch(e){ ctrl.enqueue(enc.encode('\n\n[The tutor hit an error: '+(e.message||e)+']')); }

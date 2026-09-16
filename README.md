@@ -12,7 +12,7 @@ Without any env vars the site keeps notes and decks in the browser, reads NLT an
 
 ## Env
 
-- `OPENAI_API_KEY` turns on the tutor and the content pipeline. `OPENAI_MODEL` picks the answering model (default `gpt-5`); `OPENAI_PLANNER_MODEL` picks the small model that plans retrieval (default `gpt-5-mini`).
+- `OPENAI_API_KEY` turns on the tutor and the content pipeline. `OPENAI_MODEL` picks the answering model (default `gpt-5`); `OPENAI_REASONING` sets its reasoning effort (default `low`; `medium` is slower and slightly more thorough).
 - `NLT_API_KEY` raises the NLT limit to 5,000 requests a day. Get one at https://api.nlt.to.
 - `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` sync notes, decks and card status across devices. Run `supabase/schema.sql` once.
 
