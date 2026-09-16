@@ -17,11 +17,12 @@ function Message({ text, onNav }){
 }
 function Grounding({ g, v }){
   const [open,setOpen]=useState(false); if(!g) return null;
-  const n=g.passages.length+g.hits.length+g.xrefs.length+g.people.length+g.places.length+g.studies.length+g.pages.length+(g.notes?1:0)+(g.intro?1:0);
+  const n=g.passages.length+g.hits.length+g.xrefs.length+g.people.length+g.places.length+g.studies.length+g.pages.length+(g.notes?1:0)+(g.intro?1:0); if(!n&&!(g.calls&&g.calls.length)) return <div className="tut-ground"><span className="tut-toggle" style={{ color:'#d9b25c', cursor:'default' }}>Nothing was looked up for this answer</span></div>;
   const Row=({ label, items, kind })=>items&&items.length?<div className="tut-row"><span className="lab">{label}</span><span className="tut-chips">{items.map((x,i)=>typeof x==='string'?<span key={i} className="chip">{x}</span>:<a key={i} className={'chip '+(kind||'')} href={x.href}>{x.label}{x.evidence&&<Grade evidence={x.evidence}/>}</a>)}</span></div>:null;
   return <div className="tut-ground">
     <button className="tut-toggle" onClick={()=>setOpen(o=>!o)}><span dangerouslySetInnerHTML={{ __html:ico(open?'check':'book',12) }}/> Grounded in {n} {n===1?'source':'sources'}{v&&v.badRefs.length?` · ${v.badRefs.length} reference${v.badRefs.length>1?'s':''} could not be verified`:v&&v.checkedRefs?` · ${v.checkedRefs} references verified`:''}</button>
     {open && <div className="tut-rows">
+      {g.calls&&g.calls.length>0 && <div className="tut-row"><span className="lab">Looked up</span><span className="tut-chips">{g.calls.map((c,i)=><span key={i} className="chip">{c}</span>)}</span></div>}
       <Row label="Passages" items={g.passages}/><Row label="Cross refs" items={g.xrefs}/><Row label="Also matched" items={g.hits}/>
       {(g.notes||g.intro) && <div className="tut-row"><span className="lab">Notes</span><span className="tut-chips">{g.intro&&<span className="chip">{g.intro}</span>}{g.notes&&<span className="chip">{g.notes}</span>}</span></div>}
       <Row label="People" items={g.people}/><Row label="Places" items={g.places}/><Row label="Emmaus studies" items={g.studies}/><Row label="Pages" items={g.pages}/>
@@ -31,10 +32,10 @@ function Grounding({ g, v }){
     </div>}
   </div>;
 }
-function parseStream(raw){ const parts=raw.split(SEP); let text=parts[0]||''; let ctx=null, ver=null;
+function parseStream(raw){ const parts=raw.split(SEP); let text=parts[0]||''; let ctx=null, ver=null, status='';
   for(const p of parts.slice(1)){ const nl=p.indexOf('\n'); const head=nl>=0?p.slice(0,nl):p; const rest=nl>=0?p.slice(nl+1):'';
-    try{ const j=JSON.parse(head); if(j.type==='context') ctx=j; else if(j.type==='verify') ver=j; text+=rest; }catch(e){ text+=p; } }
-  return { text:text.trim(), ctx, ver }; }
+    try{ const j=JSON.parse(head); if(j.type==='context') ctx=j; else if(j.type==='verify') ver=j; else if(j.type==='status') status=j.text; text+=rest; }catch(e){ text+=p; } }
+  return { text:text.trim(), ctx, ver, status }; }
 export default function Tutor() {
   const params = useSearchParams(); const router = useRouter();
   const [msgs, setMsgs] = useState([]);
@@ -54,14 +55,14 @@ export default function Tutor() {
       const r = await fetch('/api/tutor', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ messages: history.map(m=>({ role:m.role, content:m.content })), book: context ? context.slug : undefined, ch: context ? context.ch : undefined }) });
       if (!r.ok || !r.body) throw new Error((await r.json().catch(() => ({}))).error || 'The tutor is unavailable');
       const reader = r.body.getReader(); const dec = new TextDecoder(); let raw = '';
-      while (true) { const { value, done } = await reader.read(); if (done) break; raw += dec.decode(value, { stream: true }); const p=parseStream(raw); setMsgs([...history, { role: 'assistant', content: p.text, ground: p.ctx, verify: p.ver }]); }
+      while (true) { const { value, done } = await reader.read(); if (done) break; raw += dec.decode(value, { stream: true }); const p=parseStream(raw); setMsgs([...history, { role: 'assistant', content: p.text, ground: p.ctx, verify: p.ver, status: p.status }]); }
     } catch (e) { setMsgs([...history, { role: 'assistant', content: 'Something went wrong: ' + e.message }]); }
     setBusy(false);
   }
   return <div className="wrap"><Artwork id="A5" className="art-page-heading"/>
     <div className="lab">Grounded in the text</div>
     <h1 className="h1" style={{ marginTop: 8, fontSize: 'clamp(48px,7vw,96px)' }}>Tutor</h1>
-    <p style={{ fontSize: 20, color: 'var(--dim)', margin: '14px 0 0', maxWidth: 760 }}>Ask anything about the Bible, or where to find something on Emmaus. Before it answers, the tutor looks up the actual passages, cross references, study notes and the people and places involved, then cites what it found. Every reference is checked afterwards.</p>
+    <p style={{ fontSize: 20, color: 'var(--dim)', margin: '14px 0 0', maxWidth: 760 }}>Ask anything about the Bible, or where to find something on Emmaus. Before it answers, the tutor reads the actual passages, searches the text, follows cross references and looks up the people and places involved, then answers plainly from what it read. Every reference is checked afterwards, and you can see exactly what it looked up.</p>
     <div className="card" style={{ marginTop: 32, padding: 20 }}>
       {ctx && <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 14, flexWrap: 'wrap', gap: 8 }}>
         <a className="chip" href={`/book/${ctx.slug}/${ctx.ch}`}><span dangerouslySetInnerHTML={{ __html: ico('book', 13) }} /> About {ctx.book} {ctx.ch}</a>
@@ -70,7 +71,7 @@ export default function Tutor() {
       <div className="chat" ref={box}>
         {msgs.length === 0 && <div className="msg">Ask me anything. I read the passage first, then answer from it with verse references, and point you to the right page on Emmaus when there is one.</div>}
         {msgs.map((m, i) => <div key={i} className={'msg ' + (m.role === 'user' ? 'me' : '')} style={{ whiteSpace: 'pre-wrap' }}>
-          {m.content ? <Message text={m.content} onNav={p => router.push(p)} /> : (busy && i === msgs.length - 1 ? (m.ground ? 'Reading…' : 'Looking up the passages…') : '')}
+          {m.content ? <Message text={m.content} onNav={p => router.push(p)} /> : (busy && i === msgs.length - 1 ? <span className="note">{m.status || 'Thinking about what to read…'}</span> : '')}
           {m.role==='assistant' && m.ground && (m.verify || !busy) && <Grounding g={m.ground} v={m.verify}/>}
         </div>)}
       </div>
