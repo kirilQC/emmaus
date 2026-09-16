@@ -1,46 +1,54 @@
 import OpenAI from 'openai';
 import { NextResponse } from 'next/server';
-import { BOOKS, MT, THESES } from '../../../lib/data.js';
-import { parseRefs } from '../../../lib/learn/refs.js';
-import { SECTIONS, findPages, pageLine } from '../../../lib/catalog.js';
+import { heuristicPlan, normalizePlan, retrieve, contextPrompt, groundingSummary, openedRef } from '../../../lib/tutor/retrieve.js';
+import { verifyAnswer } from '../../../lib/tutor/verify.js';
 export const runtime='nodejs'; export const maxDuration=120;
 const MODEL=process.env.OPENAI_MODEL||'gpt-5';
-const SYSTEM=`You are the tutor inside Emmaus, a Bible study site that reads the whole Bible as one story in the New Living Translation and grades every claim by its evidence. Readers ask you anything: a passage, a doctrine, a person, a place, history, how to start reading, or where to find something on the site.
+const PLANNER=process.env.OPENAI_PLANNER_MODEL||'gpt-5-mini';
+const SEP='';
+const SYSTEM=`You are the tutor inside Emmaus, a Bible study site that reads the whole Bible as one story and grades every claim by its evidence. Readers ask you anything: a passage, a doctrine, a person, a place, history, how to start reading, or where to find something on the site.
+You have been given retrieved material below: Bible text (Berean Standard Bible), cross references, Tyndale Open Study Notes, entity data, and Emmaus's own graded studies and pages. Work from that material.
 Rules:
-- Answer from Scripture. Cite every claim with a verse reference in the form (Matthew 5:3). Never invent a verse or a reference; if you are not certain a verse says something, say so instead of quoting it.
-- When you quote, quote the NLT wording from any passage text provided below. Otherwise paraphrase and cite rather than quoting from memory.
-- Be a teacher, not a preacher: explain context, structure and meaning. Where traditions disagree, lay out the main views fairly and briefly and let the reader weigh them. Say what is explicit in the text, what is inference, and what is debated.
-- Emmaus has pages that go deeper. A list of relevant pages is provided below with their paths. When one of them would genuinely help, point the reader to it with a markdown link in the form [Title](/path), using only paths from the list, woven into the answer or as a short "On Emmaus" line at the end with at most three links. Do not list pages that are not relevant. If the reader asks where to find something on the site, answer with the links directly.
-- Keep answers focused: usually 120 to 250 words, in plain prose with short paragraphs. No headings, no bullet lists unless the reader asks for a list.
-- If asked to quiz, ask one good question at a time and wait.
+- Ground every claim in Scripture and cite it with a verse reference in the form (John 3:16). Only cite verses whose text you can see below, or verses you are certain exist. Never invent a reference.
+- Quote only from the BSB text provided, word for word, and only put quotation marks around real quotations. Otherwise paraphrase and cite. You may note that the reader's own Bible on Emmaus is the NLT, so wording will differ slightly.
+- Say what the text states explicitly, what is inference, and what is debated. Where traditions disagree, lay out the main views fairly and briefly and let the reader weigh them. Do not present one tradition as the only Christian view.
+- When the Tyndale notes or an Emmaus study inform your answer, say so briefly ("the Tyndale study notes point out", "Emmaus's study on X grades this as debated").
+- Point the reader to Emmaus pages with markdown links in the form [Title](/path), using only paths from the list below, woven into the answer or as a short final line with at most three links. Never link to pages that are not listed. If asked where to find something on the site, answer with the links directly.
+- Be a teacher, not a preacher. Usually 120 to 260 words in plain prose with short paragraphs. No headings; no bullet lists unless asked. If asked to quiz, ask one question at a time and wait.
+- If the material does not settle the question, say so plainly rather than guessing.
 - Never use em dashes or en dashes; use commas, full stops or the word "to".`;
-const RX=/((?:[1-3] )?(?:Song of Songs|[A-Z][a-z]+)) (\d+)(?::\d+(?:-\d+)?)?/g;
-async function nlt(ref){ try{ const r=await fetch(`https://api.nlt.to/api/passages?ref=${encodeURIComponent(ref)}&version=NLT&key=${process.env.NLT_API_KEY||'TEST'}`); if(!r.ok) return ''; const t=await r.text(); return t.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim().slice(0,9000); }catch(e){ return ''; } }
+const PLAN_PROMPT=`You plan retrieval for a Bible study tutor. Given the conversation, decide what to look up so the answer can be grounded in the actual text. Reply with JSON only:
+{"passages": ["Book chapter:verse-verse", ...], "keywords": ["short search phrases for a verse search", ...], "entities": ["people or place names mentioned or implied", ...], "wholeBook": boolean, "intent": "passage" | "topic" | "person" | "place" | "site" | "general"}
+Rules: name the specific passages the question is really about, even if the reader did not cite one (e.g. "the prodigal son" -> "Luke 15:11-32"; "love is patient" -> "1 Corinthians 13:4-7"). Use full book names. Keep passages to at most 4 and each under 40 verses. Keywords should be distinctive Bible words likely to appear in the relevant verses, 2 to 5 phrases. wholeBook is true only when the question is about a book as a whole. intent "site" means the reader is asking where to find something on the Emmaus website.`;
+async function plan(client,messages,question){
+  try{
+    const convo=messages.slice(-6).map(m=>`${m.role==='assistant'?'Tutor':'Reader'}: ${String(m.content).slice(0,600)}`).join('\n');
+    const r=await client.responses.create({ model:PLANNER, instructions:PLAN_PROMPT, input:`${convo}\n\nPlan retrieval for the reader's last message: "${question}"`, text:{ format:{ type:'json_object' } }, reasoning:{ effort:'low' } });
+    return JSON.parse(r.output_text||'{}');
+  }catch(e){ return null; }
+}
+export async function GET(req){
+  const q=new URL(req.url).searchParams.get('debug'); if(!q) return NextResponse.json({ ok:true });
+  const p=normalizePlan(null,q,null); const ctx=await retrieve(q,p,null);
+  return NextResponse.json({ plan:p, grounding:groundingSummary(ctx), prompt:contextPrompt(ctx) });
+}
 export async function POST(req){
   if(!process.env.OPENAI_API_KEY) return NextResponse.json({ error:'OPENAI_API_KEY is not set' },{ status:500 });
   const { messages=[], book, ch } = await req.json();
-  const last=[...messages].reverse().find(m=>m.role==='user')?.content||'';
-  const parts=[];
-  const b=book&&BOOKS.find(x=>x.slug===book||x.name===book);
-  if(b&&ch){
-    const summary=b.slug==='matthew'&&MT.ch[ch-1]?`Emmaus summary of this chapter: ${MT.ch[ch-1][1]}. ${MT.ch[ch-1][3]}`:'';
-    const text=await nlt(`${b.name} ${ch}`);
-    parts.push(`The reader opened this conversation from ${b.name} ${ch}, so treat that chapter as the default subject unless they ask about something else.\nBook thesis: ${THESES[b.name]||''}\n${summary}\n${text?`NLT text of ${b.name} ${ch}:\n${text}`:''}`);
-  }else{
-    const seen=new Set(); const refs=[]; let m; RX.lastIndex=0;
-    while((m=RX.exec(last))&&refs.length<2){ const hit=parseRefs(m[0])[0]; if(hit){ const k=`${hit.book.name} ${hit.ch}`; if(!seen.has(k)){ seen.add(k); refs.push(k); } } }
-    for(const k of refs){ const text=await nlt(k); if(text) parts.push(`NLT text of ${k}:\n${text}`); }
-    if(!refs.length) parts.push('(No passage text was fetched for this question; cite carefully and do not quote from memory.)');
-  }
-  const pages=findPages(last); const sections=SECTIONS.filter(s=>tokensHit(s.text,last));
-  parts.push(`Pages on Emmaus relevant to this question (path in parentheses):\n${[...pages,...sections].map(pageLine).join('\n')||'- none found; the main areas are the Canon (/), Explore (/explore), Memorise (/memorize) and Library (/library)'}`);
+  const question=[...messages].reverse().find(m=>m.role==='user')?.content||'';
+  const opened=book&&ch?openedRef(book,+ch):null;
   const client=new OpenAI();
+  const planned=normalizePlan(await plan(client,messages,question),question,opened);
+  const ctx=await retrieve(question,planned,opened);
   let stream;
-  try{
-    stream=await client.responses.create({ model:MODEL, instructions:SYSTEM+'\n\n'+parts.join('\n\n'), input:messages.map(m=>({ role:m.role==='assistant'?'assistant':'user', content:m.content })), stream:true });
-  }catch(e){ return NextResponse.json({ error:e.message||'OpenAI request failed' },{ status:502 }); }
-  const enc=new TextEncoder();
-  const body=new ReadableStream({ async start(ctrl){ try{ for await (const ev of stream){ if(ev.type==='response.output_text.delta') ctrl.enqueue(enc.encode(ev.delta)); } }catch(e){ ctrl.enqueue(enc.encode('\n\n[The tutor hit an error: '+(e.message||e)+']')); } ctrl.close(); } });
+  try{ stream=await client.responses.create({ model:MODEL, instructions:SYSTEM+'\n\n'+contextPrompt(ctx), input:messages.map(m=>({ role:m.role==='assistant'?'assistant':'user', content:m.content })), stream:true }); }
+  catch(e){ return NextResponse.json({ error:e.message||'OpenAI request failed' },{ status:502 }); }
+  const enc=new TextEncoder(); let answer='';
+  const body=new ReadableStream({ async start(ctrl){
+    ctrl.enqueue(enc.encode(SEP+JSON.stringify({ type:'context', ...groundingSummary(ctx) })+'\n'));
+    try{ for await (const ev of stream){ if(ev.type==='response.output_text.delta'){ answer+=ev.delta; ctrl.enqueue(enc.encode(ev.delta)); } } }
+    catch(e){ ctrl.enqueue(enc.encode('\n\n[The tutor hit an error: '+(e.message||e)+']')); }
+    ctrl.enqueue(enc.encode('\n'+SEP+JSON.stringify({ type:'verify', ...verifyAnswer(answer,ctx) })+'\n'));
+    ctrl.close(); } });
   return new Response(body,{ headers:{ 'content-type':'text/plain; charset=utf-8', 'cache-control':'no-store' } });
 }
-function tokensHit(text,q){ const words=String(q).toLowerCase().split(/[^a-z0-9]+/).filter(w=>w.length>3); return words.some(w=>text.includes(w)); }
