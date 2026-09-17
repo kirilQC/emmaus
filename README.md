@@ -13,6 +13,7 @@ Without any env vars the site keeps notes and decks in the browser, reads NLT an
 ## Env
 
 - `OPENAI_API_KEY` turns on the tutor and the content pipeline. `OPENAI_MODEL` picks the answering model (default `gpt-5`); `OPENAI_REASONING` sets its reasoning effort (default `low`; `medium` is slower and slightly more thorough).
+- `TUTOR_SYSTEM_PROMPT` replaces the tutor's voice, and `TUTOR_PROMPT_APPEND` adds to it. Both are read per request, so editing them in Vercel changes the tutor on the next answer with no deploy. The tool, citation and link rules in `lib/tutor/prompt.js` are always appended after yours, so the retrieval and the link checking keep working whatever you write. Print what is live with `node scripts/tutor-prompt.mjs` (`--voice` for just the editable part).
 - `NLT_API_KEY` raises the NLT limit to 5,000 requests a day. Get one at https://api.nlt.to.
 - `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` sync notes, decks and card status across devices. Run `supabase/schema.sql` once.
 
