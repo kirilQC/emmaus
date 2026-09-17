@@ -3,8 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   async redirects(){
     return [
-      { source:'/learn', destination:'/explore#learn', permanent:true },
-      { source:'/reference', destination:'/explore#reference', permanent:true },
+      { source:'/learn', destination:'/explore', permanent:true },
+      { source:'/reference', destination:'/explore', permanent:true },
     ];
   },
 };
