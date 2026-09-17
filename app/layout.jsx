@@ -2,6 +2,7 @@ import './globals.css';
 import './artwork.css';
 import './learn.css';
 import './explore.css';
+import './memorise.css';
 import { Newsreader, Instrument_Serif, Instrument_Sans } from 'next/font/google';
 import Nav from '../components/Nav.jsx';
 import Footer from '../components/Footer.jsx';
